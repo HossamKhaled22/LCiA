@@ -1,0 +1,5 @@
+{
+  "_schema": "query_context_v1",
+  "default_fields": ["name", "class"],
+  "note": "Default BIM-context fields appended to the SEMANTIC / reranker query when the Connector's 'Context' option is on. BM25F (and the BM25F component of hybrid) always scores the typed name only. The set is editable per material in the UI; this file only seeds the default. Recommended to add (measured to help): description, concrete_grade. Numeric fields (density, thermal_conductivity) and host_types add noise to dense retrieval and belong in the deterministic Advanced Filters, not the embedding query. See query_context_values_a2_sphera_{lang}.json for per-field measured values."
+}

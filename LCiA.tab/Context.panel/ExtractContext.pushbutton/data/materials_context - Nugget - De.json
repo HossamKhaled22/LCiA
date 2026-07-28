@@ -1,0 +1,1767 @@
+[
+    {
+        "revit_id": 609381, 
+        "name": "Luftschicht", 
+        "description": "Luftschicht", 
+        "class": "Gas", 
+        "host_elements": {
+            "categories": [
+                "Floors", 
+                "Roofs", 
+                "Walls"
+            ], 
+            "types": [
+                "Blechdach", 
+                "FB - GN_Terrasse OG 5", 
+                "Metall_Goldfassade", 
+                "VS Metallfassade mit Unterkonstruktion 140", 
+                "Ziegeldach 360"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Gas", 
+            "density_kg_m3": 1.2
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 0.025, 
+            "density_kg_m3": 1.2
+        }
+    }, 
+    {
+        "revit_id": 712254, 
+        "name": "Ortbeton - C30/37 Verputzt", 
+        "description": "Ortbeton - C30/37 Verputzt", 
+        "class": "Beton", 
+        "host_elements": {
+            "categories": [
+                "Assemblies", 
+                "Floors", 
+                "Walls"
+            ], 
+            "types": [
+                "FB - 170_beschichtet", 
+                "Massivwand030", 
+                "Massivwand031", 
+                "Massivwand032", 
+                "Massivwand033", 
+                "Massivwand034", 
+                "Massivwand035", 
+                "Ortbeton - 180", 
+                "Ortbeton - 180_Sichtbeton", 
+                "Ortbeton - 200_Sichtbeton", 
+                "Ortbeton - 220", 
+                "Ortbeton - 290", 
+                "Ortbeton - STB 200", 
+                "Ortbeton - STB 250", 
+                "Ortbeton - STB 300"
+            ]
+        }, 
+        "physical_asset": {
+            "lightweight": false, 
+            "concrete_compression_mpa": 30, 
+            "structural_class": "Concrete", 
+            "density_kg_m3": 2407.3117
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 1.046, 
+            "density_kg_m3": 2300
+        }
+    }, 
+    {
+        "revit_id": 712261, 
+        "name": "Mauerwerk - mit Daemmeigenschaften", 
+        "description": "Mauerwerk - mit Daemmeigenschaften", 
+        "class": "Mauerwerk", 
+        "host_elements": {
+            "categories": [
+                "Walls"
+            ], 
+            "types": [
+                "Mauerwerk - Ziegel 100", 
+                "Mauerwerk - Ziegel 200", 
+                "Mauerwerk - Ziegel 250", 
+                "Mauerwerk - Ziegel 300"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Basic", 
+            "density_kg_m3": 1950
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 0.54, 
+            "density_kg_m3": 1550
+        }
+    }, 
+    {
+        "revit_id": 712264, 
+        "name": "Mauerwerk - ohne Daemmeigenschaften", 
+        "description": "Mauerwerk - ohne Daemmeigenschaften", 
+        "class": "Mauerwerk", 
+        "host_elements": {
+            "categories": [
+                "Walls"
+            ], 
+            "types": [
+                "Mauerwerk - Stein Bestand 330", 
+                "Mauerwerk - Stein Bestand 350", 
+                "Mauerwerk - Stein Bestand 800"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Basic", 
+            "density_kg_m3": 1950
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 1.297, 
+            "density_kg_m3": 1980
+        }
+    }, 
+    {
+        "revit_id": 712287, 
+        "name": "Dämmung - hart", 
+        "description": "Dämmung - hart", 
+        "class": "Wärmedämmung", 
+        "host_elements": {
+            "categories": [
+                "Floors", 
+                "Roofs", 
+                "Walls"
+            ], 
+            "types": [
+                "Blechdach", 
+                "FB - GN_160", 
+                "FB - GN_180", 
+                "FB - GN_190", 
+                "FB - GN_200", 
+                "FB - GN_200 Wohnungszugang", 
+                "FB - GN_220 Wohnungszugang", 
+                "FB - GN_Terrasse OG 5", 
+                "Golden Nugget_Wandabschluss Dach Nordost", 
+                "Metall_Goldfassade", 
+                "VS Metallfassade mit Unterkonstruktion 140", 
+                "WD -  hart 100", 
+                "WD -  hart 120", 
+                "WD -  hart 150", 
+                "WD -  hart 50", 
+                "WD_160"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Basic", 
+            "density_kg_m3": 35
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 0.027, 
+            "density_kg_m3": 35
+        }
+    }, 
+    {
+        "revit_id": 712288, 
+        "name": "Dämmung - weich", 
+        "description": "Dämmung - weich", 
+        "class": "Wärmedämmung", 
+        "host_elements": {
+            "categories": [
+                "Curtain Panels", 
+                "Roofs", 
+                "Walls"
+            ], 
+            "types": [
+                "Holzwand WD -  weich 100", 
+                "Liftwand 100", 
+                "Sparrenlage 180", 
+                "Trockenbau - GK 100", 
+                "Trockenbau - GK 150", 
+                "Trockenbau - GK 200", 
+                "Trockenbau - GK 250", 
+                "Trockenbau - GK VS 40", 
+                "VS_Dach GK 40", 
+                "WD -  weich 100", 
+                "WD_Hauptdach", 
+                "WD_weich_100"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Basic", 
+            "density_kg_m3": 200
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 0.034, 
+            "density_kg_m3": 200
+        }
+    }, 
+    {
+        "revit_id": 916544, 
+        "name": "Ortbeton - C30/37", 
+        "description": "Ortbeton - C30/37", 
+        "class": "Beton", 
+        "host_elements": {
+            "categories": [
+                "Assemblies", 
+                "Floors", 
+                "Structural Foundations"
+            ], 
+            "types": [
+                "Ortbeton - 180", 
+                "Ortbeton - 200", 
+                "Ortbeton - 250", 
+                "Ortbeton - Fundament_900", 
+                "Ortbeton - Fundamentplatte_150", 
+                "Ortbeton - Fundamentplatte_200", 
+                "Ortbeton - Fundamentplatte_250", 
+                "Ortbeton - Fundamentplatte_300", 
+                "STB_Fundament_2250x2250x700", 
+                "Trägerdecke 036", 
+                "Trägerdecke 038"
+            ]
+        }, 
+        "physical_asset": {
+            "lightweight": false, 
+            "concrete_compression_mpa": 30, 
+            "structural_class": "Concrete", 
+            "density_kg_m3": 2500
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 1.046, 
+            "density_kg_m3": 2300
+        }
+    }, 
+    {
+        "revit_id": 917581, 
+        "name": "Fußboden - Fußbodenaufbau", 
+        "description": "Fußboden - Fußbodenaufbau", 
+        "class": "Fußbodenaufbau", 
+        "host_elements": {
+            "categories": [
+                "Floors"
+            ], 
+            "types": [
+                "FB - 120_leer", 
+                "FB - 160_leer", 
+                "FB - 180_leer", 
+                "FB - 200_leer", 
+                "FB - 250_leer", 
+                "FB - 300_leer", 
+                "FB - 610_leer"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 918068, 
+        "name": "Trockenbau - Gipsplatte", 
+        "description": "Trockenbau - Gipsplatte", 
+        "class": "Mauerwerk", 
+        "host_elements": {
+            "categories": [
+                "Roofs", 
+                "Walls"
+            ], 
+            "types": [
+                "GK_Aufbau", 
+                "Sparrenlage 180", 
+                "Trockenbau - GK 100", 
+                "Trockenbau - GK 150", 
+                "Trockenbau - GK 200", 
+                "Trockenbau - GK 250", 
+                "Trockenbau - GK VS 40", 
+                "VS_Dach GK 40", 
+                "Ziegeldach 360"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Basic", 
+            "density_kg_m3": 1100
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 0.65, 
+            "density_kg_m3": 1100
+        }
+    }, 
+    {
+        "revit_id": 918250, 
+        "name": "Dachdeckung - Blech", 
+        "description": "Dachdeckung - Blech", 
+        "class": "Dachdeckung", 
+        "host_elements": {
+            "categories": [
+                "Floors", 
+                "Roofs"
+            ], 
+            "types": [
+                "Blechdach", 
+                "FB - GN_Terrasse OG 5"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Metal", 
+            "density_kg_m3": 2700
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 230, 
+            "density_kg_m3": 2700
+        }
+    }, 
+    {
+        "revit_id": 918254, 
+        "name": "Dachdeckung - Dampfbremse", 
+        "description": "Dachdeckung - Dampfbremse", 
+        "class": "Dachdeckung", 
+        "host_elements": {
+            "categories": [
+                "Roofs"
+            ], 
+            "types": [
+                "Blechdach", 
+                "GK_Aufbau"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 918854, 
+        "name": "Dachdeckung - Holz", 
+        "description": "Dachdeckung - Holz", 
+        "class": "Holz", 
+        "host_elements": {
+            "categories": [
+                "Fascias", 
+                "Floors", 
+                "Roofs"
+            ], 
+            "types": [
+                "Blechdach", 
+                "FB - GN_Terrasse OG 5", 
+                "GK_Aufbau", 
+                "Metall_Goldfassade", 
+                "Windladen", 
+                "Ziegeldach 360"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 918933, 
+        "name": "Dachdeckung - Ziegel", 
+        "description": "Dachdeckung - Ziegel", 
+        "class": "Dachdeckung", 
+        "host_elements": {
+            "categories": [
+                "Roofs"
+            ], 
+            "types": [
+                "Ziegeldach 360"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Basic", 
+            "density_kg_m3": 2760
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 0.84, 
+            "density_kg_m3": 1900
+        }
+    }, 
+    {
+        "revit_id": 919236, 
+        "name": "Glas - klar", 
+        "description": "Glas - klar", 
+        "class": "Glas", 
+        "host_elements": {
+            "categories": [
+                "Curtain Panels"
+            ], 
+            "types": [
+                "Dachverglasung", 
+                "Glas 4/16/4"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Generic", 
+            "density_kg_m3": 2180
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 1.1, 
+            "density_kg_m3": 2480
+        }
+    }, 
+    {
+        "revit_id": 919542, 
+        "name": "Kunststoff - grau 70-70-70", 
+        "description": "Kunststoff - grau 70-70-70", 
+        "class": "Kunststoff", 
+        "host_elements": {
+            "categories": [
+                "Gutters", 
+                "Railings", 
+                "Roofs"
+            ], 
+            "types": [
+                "Blechdach 40", 
+                "Dachrinne 150", 
+                "OG 5_Terrasse"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Plastic", 
+            "density_kg_m3": 1300
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 0.167, 
+            "density_kg_m3": 1500
+        }
+    }, 
+    {
+        "revit_id": 920885, 
+        "name": "Holz - 140-100-70", 
+        "description": "Holz - 140-100-70", 
+        "class": "Holz", 
+        "host_elements": {
+            "categories": [
+                "Curtain Wall Mullions", 
+                "Walls", 
+                "Windows"
+            ], 
+            "types": [
+                "1081 x 2150", 
+                "1602 x 1700", 
+                "1750 x 2150", 
+                "2481 x 1300", 
+                "2655 x 900", 
+                "60 x 100", 
+                "800 x 1100", 
+                "800 x 2150", 
+                "Ecke Ständerwand 100", 
+                "VS Metallfassade mit Holzschalung 30", 
+                "VS Metallfassade mit Unterkonstruktion 140"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1082757, 
+        "name": "Ortbeton - bewehrt geschliffen", 
+        "description": "Ortbeton - bewehrt geschliffen", 
+        "class": "Beton", 
+        "host_elements": {
+            "categories": [
+                "Floors", 
+                "Walls"
+            ], 
+            "types": [
+                "FB - 160_leer", 
+                "FB - 180_leer", 
+                "Ortbeton - STB 100", 
+                "Ortbeton - STB 150", 
+                "WD -  hart 50"
+            ]
+        }, 
+        "physical_asset": {
+            "lightweight": false, 
+            "concrete_compression_mpa": 24.1329, 
+            "structural_class": "Concrete", 
+            "density_kg_m3": 2407.3117
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 1.046, 
+            "density_kg_m3": 2300
+        }
+    }, 
+    {
+        "revit_id": 1102086, 
+        "name": "Kunststoff - Eierschale", 
+        "description": "Kunststoff - Eierschale", 
+        "class": "Kunststoff", 
+        "host_elements": {
+            "categories": [
+                "Windows"
+            ], 
+            "types": [
+                "1300 x 1300", 
+                "600 x 800", 
+                "935 x 780 Ost", 
+                "935 x 780 West"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1132365, 
+        "name": "Metall - Edelstahl Satiniert", 
+        "description": "Metall - Edelstahl Satiniert", 
+        "class": "Metall", 
+        "host_elements": {
+            "categories": [
+                "Electrical Equipment", 
+                "Generic Models", 
+                "Windows"
+            ], 
+            "types": [
+                "1000 x 1000", 
+                "1000 x 700", 
+                "1002 x 2580", 
+                "1033 x 2600", 
+                "1081 x 2150", 
+                "1300 x 1300", 
+                "1602 x 1700", 
+                "1720 x 2600", 
+                "1750 x 2150", 
+                "2481 x 1300", 
+                "2600 x 1200", 
+                "2641 x 1638", 
+                "2653 x 2580", 
+                "2655 x 900", 
+                "2917 x 2580", 
+                "3353 x 2580", 
+                "3353 x 2600", 
+                "3710 x 2440", 
+                "4107 x 2600", 
+                "600 x 800", 
+                "800 x 1100", 
+                "800 x 2150", 
+                "935 x 780 Ost", 
+                "935 x 780 West", 
+                "A-Pad", 
+                "Liftschacht"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Metal", 
+            "density_kg_m3": 8000
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 16.2, 
+            "density_kg_m3": 8000
+        }
+    }, 
+    {
+        "revit_id": 1134030, 
+        "name": "Textil - Gold", 
+        "description": "Textil - Gold", 
+        "class": "Textil", 
+        "host_elements": {
+            "categories": [
+                "Curtain Panels"
+            ], 
+            "types": [
+                "Vorhanglamelle"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1141695, 
+        "name": "Glas - Isolierverglasung 2-fach", 
+        "description": "Glas - Isolierverglasung", 
+        "class": "Glas", 
+        "host_elements": {
+            "categories": [
+                "Windows"
+            ], 
+            "types": [
+                "Aufsatz Kniestock"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1141700, 
+        "name": "Kunststoff - dunkelgrau 40-38-36", 
+        "description": "Kunststoff - dunkelgrau 40-38-36", 
+        "class": "Kunststoff", 
+        "host_elements": {
+            "categories": [
+                "Windows"
+            ], 
+            "types": [
+                "1300 x 1300", 
+                "935 x 780 Ost", 
+                "935 x 780 West"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Metal", 
+            "density_kg_m3": 7850
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 45, 
+            "density_kg_m3": 7850
+        }
+    }, 
+    {
+        "revit_id": 1141719, 
+        "name": "Kunststoff - grau 192-192-192", 
+        "description": "Kunststoff - grau 192-192-192", 
+        "class": "Kunststoff", 
+        "host_elements": {
+            "categories": [
+                "Generic Models", 
+                "Windows"
+            ], 
+            "types": [
+                "3710 x 2440", 
+                "INNOCAD"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1154605, 
+        "name": "Metall - Aluminium", 
+        "description": "Metall - Aluminium", 
+        "class": "Metall", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "Liftschacht"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1179846, 
+        "name": "Metall - Goldfassade Brass Schindeln", 
+        "description": "Metall - Goldfassade Brass Schindeln", 
+        "class": "Metall", 
+        "host_elements": {
+            "categories": [
+                "Roofs", 
+                "Walls"
+            ], 
+            "types": [
+                "Blechdach", 
+                "Metall_Goldfassade", 
+                "VS Metallfassade mit Holzschalung 30", 
+                "VS Metallfassade mit Unterkonstruktion 140", 
+                "WD_160", 
+                "WD_weich_100"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1184913, 
+        "name": "Fußboden - Epoxidharzbeschichtung", 
+        "description": "Fußboden - Epoxidharzbeschichtung", 
+        "class": "Farbe/Beschichtung", 
+        "host_elements": {
+            "categories": [
+                "Floors"
+            ], 
+            "types": [
+                "FB - 120_beschichtet", 
+                "FB - 170_beschichtet", 
+                "FB - 2_Beschichtung mit Anstrich", 
+                "FB - Dichtbahn", 
+                "FB - GN_160", 
+                "FB - GN_180", 
+                "FB - GN_190", 
+                "FB - GN_200", 
+                "FB - GN_200 Wohnungszugang", 
+                "FB - GN_220 Wohnungszugang"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1184914, 
+        "name": "Fußboden - Heizestrich", 
+        "description": "Fußboden - Heizestrich", 
+        "class": "Fußbodenaufbau", 
+        "host_elements": {
+            "categories": [
+                "Floors"
+            ], 
+            "types": [
+                "FB - 120_beschichtet", 
+                "FB - 170_beschichtet", 
+                "FB - GN_160", 
+                "FB - GN_180", 
+                "FB - GN_190", 
+                "FB - GN_200"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1184916, 
+        "name": "Fußboden - PE-Folie", 
+        "description": "Fußboden - PE-Folie", 
+        "class": "Fußbodenaufbau", 
+        "host_elements": {
+            "categories": [
+                "Floors"
+            ], 
+            "types": [
+                "FB - GN_160", 
+                "FB - GN_180", 
+                "FB - GN_190", 
+                "FB - GN_200", 
+                "FB - GN_200 Wohnungszugang", 
+                "FB - GN_220 Wohnungszugang"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1184917, 
+        "name": "Fußboden - Trittschalldämmung", 
+        "description": "Fußboden - Trittschalldämmung", 
+        "class": "Fußbodenaufbau", 
+        "host_elements": {
+            "categories": [
+                "Floors"
+            ], 
+            "types": [
+                "FB - 120_beschichtet", 
+                "FB - 170_beschichtet", 
+                "FB - GN_160", 
+                "FB - GN_180", 
+                "FB - GN_190", 
+                "FB - GN_200"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Basic", 
+            "density_kg_m3": 35
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 0.027, 
+            "density_kg_m3": 35
+        }
+    }, 
+    {
+        "revit_id": 1184918, 
+        "name": "Geländearbeiten - Gebundene Schüttung", 
+        "description": "Geländearbeiten - Gebundene Schüttung", 
+        "class": "Geländearbeiten", 
+        "host_elements": {
+            "categories": [
+                "Floors"
+            ], 
+            "types": [
+                "FB - GN_160", 
+                "FB - GN_180", 
+                "FB - GN_190", 
+                "FB - GN_200"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1208587, 
+        "name": "Putz - grau", 
+        "description": "Putz - grau", 
+        "class": "Mauerwerk", 
+        "host_elements": {
+            "categories": [
+                "Walls"
+            ], 
+            "types": [
+                "Liftwand 100"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1211683, 
+        "name": "Metall - Goldfassade Brass", 
+        "description": "Metall - Goldfassade Brass", 
+        "class": "Metall", 
+        "host_elements": {
+            "categories": [
+                "Curtain Panels", 
+                "Curtain Wall Mullions", 
+                "Roofs", 
+                "Walls", 
+                "Windows"
+            ], 
+            "types": [
+                "1000 x 1000", 
+                "1000 x 700", 
+                "1002 x 2580", 
+                "1033 x 2600", 
+                "1720 x 2600", 
+                "2600 x 1200", 
+                "2641 x 1638", 
+                "3353 x 2580", 
+                "3353 x 2600", 
+                "4107 x 2600", 
+                "Lamellenelement Goldfassade", 
+                "Lamellenrahmen", 
+                "Metall_Goldfassade", 
+                "VS Metallfassade mit Holzschalung 30", 
+                "WD_160"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1217448, 
+        "name": "Dachdeckung - Trennlage", 
+        "description": "Dachdeckung - Trennlage", 
+        "class": "Dachdeckung", 
+        "host_elements": {
+            "categories": [
+                "Roofs"
+            ], 
+            "types": [
+                "Blechdach"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1234490, 
+        "name": "Metall - Stahl schwarz", 
+        "description": "Metall - Stahl schwarz", 
+        "class": "Metall", 
+        "host_elements": {
+            "categories": [
+                "Floors"
+            ], 
+            "types": [
+                "FB - GN_Stahl 50"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Metal", 
+            "density_kg_m3": 7850
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 45, 
+            "density_kg_m3": 7850
+        }
+    }, 
+    {
+        "revit_id": 1298992, 
+        "name": "Geländearbeiten - Asphalt", 
+        "description": "Geländearbeiten - Asphalt", 
+        "class": "Geländearbeiten", 
+        "host_elements": {
+            "categories": [
+                "Floors"
+            ], 
+            "types": [
+                "FB - Asphalt 80"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Basic", 
+            "density_kg_m3": 2330
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 0.5, 
+            "density_kg_m3": 1700
+        }
+    }, 
+    {
+        "revit_id": 1314625, 
+        "name": "Mauerwerk - Paneel ausgeschäumt Betonoptik", 
+        "description": "Mauerwerk - Paneel ausgeschäumt Betonoptik", 
+        "class": "Mauerwerk", 
+        "host_elements": {
+            "categories": [
+                "Curtain Panels"
+            ], 
+            "types": [
+                "Paneel 24 mm"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Basic", 
+            "density_kg_m3": 32
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 0.03, 
+            "density_kg_m3": 32
+        }
+    }, 
+    {
+        "revit_id": 1314768, 
+        "name": "Kunststoff - grau 50-50-50", 
+        "description": "Kunststoff - grau 50-50-50", 
+        "class": "Kunststoff", 
+        "host_elements": {
+            "categories": [
+                "Curtain Wall Mullions", 
+                "Electrical Equipment"
+            ], 
+            "types": [
+                "24x24 schwarz", 
+                "A-Pad"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Plastic", 
+            "density_kg_m3": 1300
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 0.167, 
+            "density_kg_m3": 1500
+        }
+    }, 
+    {
+        "revit_id": 1317135, 
+        "name": "Metall - Maschendraht Gold", 
+        "description": "Metall - Maschendraht Gold", 
+        "class": "Metall", 
+        "host_elements": {
+            "categories": [
+                "Curtain Panels"
+            ], 
+            "types": [
+                "Maschendraht 3 mm"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1319034, 
+        "name": "Putz - gold", 
+        "description": "Putz - gold", 
+        "class": "Mauerwerk", 
+        "host_elements": {
+            "categories": [
+                "Roof Soffits", 
+                "Roofs", 
+                "Walls"
+            ], 
+            "types": [
+                "Dachuntersicht 100", 
+                "Dachuntersicht 40", 
+                "Liftwand 100", 
+                "Mauerwerk - Stein Bestand 330", 
+                "Sparrenlage 180", 
+                "WD -  hart 120", 
+                "WD -  hart 150", 
+                "WD -  hart 36 Hofgebäude"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1326020, 
+        "name": "Mauerwerk - Kamin Außenbekleidung", 
+        "description": "Mauerwerk - Kamin Außenbekleidung", 
+        "class": "Mauerwerk", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "30 x 30 d=16"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1326030, 
+        "name": "Mauerwerk - Kaminrohr", 
+        "description": "Mauerwerk - Kaminrohr", 
+        "class": "Mauerwerk", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "30 x 30 d=16"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1326031, 
+        "name": "Mauerwerk - Kamin Abdeckung Oben", 
+        "description": "Mauerwerk - Kamin Abdeckung Oben", 
+        "class": "Mauerwerk", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "30 x 30 d=16"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1417290, 
+        "name": "Metall - Maschendraht", 
+        "description": "Metall - Maschendraht", 
+        "class": "Metall", 
+        "host_elements": {
+            "categories": [
+                "Railings"
+            ], 
+            "types": [
+                "Geländer Wohnungstreppe OG 4 - OG 5", 
+                "OG 5_Terrasse"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1430107, 
+        "name": "Farbe - Straßenmarkierung", 
+        "description": "Farbe - Straßenmarkierung", 
+        "class": "Farbe/Beschichtung", 
+        "host_elements": {
+            "categories": [
+                "Parking"
+            ], 
+            "types": [
+                "2500x5000", 
+                "2750x5000", 
+                "3500x5000_Rollstuhl"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1438374, 
+        "name": "Metall - Stahl", 
+        "description": "Metall - Stahl", 
+        "class": "Metall", 
+        "host_elements": {
+            "categories": [
+                "Curtain Wall Mullions"
+            ], 
+            "types": [
+                "40 x 40"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1440084, 
+        "name": "Kunststoff - grau matt 64-64-64", 
+        "description": "Kunststoff - grau matt 64-64-64", 
+        "class": "Kunststoff", 
+        "host_elements": {
+            "categories": [
+                "Roofs", 
+                "Windows"
+            ], 
+            "types": [
+                "1000 x 1000", 
+                "1000 x 700", 
+                "1002 x 2580", 
+                "1033 x 2600", 
+                "1081 x 2150", 
+                "1602 x 1700", 
+                "1720 x 2600", 
+                "1750 x 2150", 
+                "2481 x 1300", 
+                "2600 x 1200", 
+                "2641 x 1638", 
+                "2653 x 2580", 
+                "2655 x 900", 
+                "2917 x 2580", 
+                "3353 x 2580", 
+                "3353 x 2600", 
+                "3710 x 2440", 
+                "4107 x 2600", 
+                "600 x 800", 
+                "800 x 1100", 
+                "800 x 2150", 
+                "Aufsatz Kniestock", 
+                "Blechdach"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1565862, 
+        "name": "Holz - Dunkelbraun 90-80-70", 
+        "description": "Holz - Dunkelbraun 90-80-70", 
+        "class": "Holz", 
+        "host_elements": {
+            "categories": [
+                "Windows"
+            ], 
+            "types": [
+                "600 x 800"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1624219, 
+        "name": "Ortbeton", 
+        "description": "Ortbeton", 
+        "class": "Beton", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "DN 1000"
+            ]
+        }, 
+        "physical_asset": {
+            "lightweight": false, 
+            "concrete_compression_mpa": 27.579, 
+            "structural_class": "Concrete", 
+            "density_kg_m3": 7.849
+        }
+    }, 
+    {
+        "revit_id": 1624220, 
+        "name": "Metall - Bronce", 
+        "description": "Metall - Bronce", 
+        "class": "Metall", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "DN 1000"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1925644, 
+        "name": "Holz - 180-173-157", 
+        "description": "Holz - 180-173-157", 
+        "class": "Holz", 
+        "host_elements": {
+            "categories": [
+                "Roofs"
+            ], 
+            "types": [
+                "WD_160"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1927954, 
+        "name": "Fußboden - Terrasse Teakholz", 
+        "description": "Fußboden - Terrasse Holz", 
+        "class": "Fußbodenaufbau", 
+        "host_elements": {
+            "categories": [
+                "Floors"
+            ], 
+            "types": [
+                "FB - 230_Terrasse"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 1979736, 
+        "name": "Metall - Gitterrost", 
+        "description": "Metall - Gitterrost", 
+        "class": "Metall", 
+        "host_elements": {
+            "categories": [
+                "Floors", 
+                "Generic Models"
+            ], 
+            "types": [
+                "FB - 30_Gitterrost", 
+                "Gitterrost 30 mm"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2003086, 
+        "name": "Kunststoff - grün 0-170-85", 
+        "description": "Kunststoff - grün 0-170-85", 
+        "class": "Kunststoff", 
+        "host_elements": {
+            "categories": [
+                "Parking"
+            ], 
+            "types": [
+                "E-Parkplatz_2"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2113613, 
+        "name": "Kunststoff - grau_192-192-192", 
+        "description": "Kunststoff - grau_192-192-192", 
+        "class": "Kunststoff", 
+        "host_elements": {
+            "categories": [
+                "Electrical Equipment"
+            ], 
+            "types": [
+                "Keyboard"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2155968, 
+        "name": "Glas - Einfachverglasung grau", 
+        "description": "Glas - Einfachverglasung grau", 
+        "class": "Glas", 
+        "host_elements": {
+            "categories": [
+                "Electrical Equipment"
+            ], 
+            "types": [
+                "480x380x280"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2155969, 
+        "name": "Metall - Chrom satiniert", 
+        "description": "Metall - Chrom satiniert", 
+        "class": "Metall", 
+        "host_elements": {
+            "categories": [
+                "Electrical Equipment", 
+                "Railings"
+            ], 
+            "types": [
+                "180x200x220", 
+                "480x380x280", 
+                "Geländer Wohnungstreppe OG 4 - OG 5"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2155972, 
+        "name": "Kunststoff - weiss", 
+        "description": "Kunststoff - weiss", 
+        "class": "Kunststoff", 
+        "host_elements": {
+            "categories": [
+                "Electrical Equipment"
+            ], 
+            "types": [
+                "480x380x280"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2155974, 
+        "name": "Kunststoff - Rot 170-0-0", 
+        "description": "Kunststoff - Rot 170-0-0", 
+        "class": "Kunststoff", 
+        "host_elements": {
+            "categories": [
+                "Electrical Equipment"
+            ], 
+            "types": [
+                "180x200x220", 
+                "480x380x280"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2155975, 
+        "name": "Gummi - Grau 64-64-64", 
+        "description": "Gummi - Grau 64-64-64", 
+        "class": "Kunststoff", 
+        "host_elements": {
+            "categories": [
+                "Electrical Equipment"
+            ], 
+            "types": [
+                "180x200x220", 
+                "480x380x280"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2158050, 
+        "name": "Kunststoff - grau 64-64-64", 
+        "description": "Kunststoff - grau 64-64-64", 
+        "class": "Kunststoff", 
+        "host_elements": {
+            "categories": [
+                "Electrical Equipment"
+            ], 
+            "types": [
+                "180x200x220"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2158052, 
+        "name": "Textil - schwarz", 
+        "description": "Textil - schwarz", 
+        "class": "Textil", 
+        "host_elements": {
+            "categories": [
+                "Electrical Equipment"
+            ], 
+            "types": [
+                "180x200x220"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2163615, 
+        "name": "Kunststoff - grau_80-80-80", 
+        "description": "Kunststoff - grau_80-80-80", 
+        "class": "Kunststoff", 
+        "host_elements": {
+            "categories": [
+                "Electrical Equipment"
+            ], 
+            "types": [
+                "Keyboard"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2178824, 
+        "name": "Fußboden - Schüttung", 
+        "description": "Fußboden - Schüttung", 
+        "class": "Fußbodenaufbau", 
+        "host_elements": {
+            "categories": [
+                "Floors"
+            ], 
+            "types": [
+                "FB - 120_beschichtet", 
+                "FB - 170_beschichtet"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2344165, 
+        "name": "Metall - Stahl verzinkt", 
+        "description": "Metall - Stahl verzinkt", 
+        "class": "Metall", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "Gitterrost 30 mm"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2356972, 
+        "name": "Lack - weiß 241-240-234", 
+        "description": "Lack - weiß 241-240-234", 
+        "class": "Farbe/Beschichtung", 
+        "host_elements": {
+            "categories": [
+                "Electrical Equipment"
+            ], 
+            "types": [
+                "A-Pad"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2437749, 
+        "name": "Metall - grau matt", 
+        "description": "Metall - grau matt", 
+        "class": "Metall", 
+        "host_elements": {
+            "categories": [
+                "Curtain Panels"
+            ], 
+            "types": [
+                "Lamellenelement Lüftungsanlage"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Metal", 
+            "density_kg_m3": 7850
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 56, 
+            "density_kg_m3": 7850
+        }
+    }, 
+    {
+        "revit_id": 2585915, 
+        "name": "Fußboden - Estrich", 
+        "description": "Fußboden - Estrich", 
+        "class": "Fußbodenaufbau", 
+        "host_elements": {
+            "categories": [
+                "Floors"
+            ], 
+            "types": [
+                "FB - GN_200 Wohnungszugang", 
+                "FB - GN_220 Wohnungszugang"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2590387, 
+        "name": "Glas - matt", 
+        "description": "Glas - matt", 
+        "class": "Glas", 
+        "host_elements": {
+            "categories": [
+                "Windows"
+            ], 
+            "types": [
+                "935 x 780 West"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Generic", 
+            "density_kg_m3": 2180
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 1.1, 
+            "density_kg_m3": 2480
+        }
+    }, 
+    {
+        "revit_id": 2614341, 
+        "name": "Glas - Isolierverglasung 3-fach", 
+        "description": "Glas - Isolierverglasung", 
+        "class": "Glas", 
+        "host_elements": {
+            "categories": [
+                "Windows"
+            ], 
+            "types": [
+                "1000 x 1000", 
+                "1000 x 700", 
+                "1002 x 2580", 
+                "1033 x 2600", 
+                "1081 x 2150", 
+                "1300 x 1300", 
+                "1602 x 1700", 
+                "1720 x 2600", 
+                "1750 x 2150", 
+                "2481 x 1300", 
+                "2600 x 1200", 
+                "2641 x 1638", 
+                "2653 x 2580", 
+                "2655 x 900", 
+                "2917 x 2580", 
+                "3353 x 2580", 
+                "3353 x 2600", 
+                "3710 x 2440", 
+                "4107 x 2600", 
+                "600 x 800", 
+                "800 x 1100", 
+                "800 x 2150", 
+                "935 x 780 Ost"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2703678, 
+        "name": "Umgebung - Gebäude gelb", 
+        "description": "Umgebung - Gebäude gelb", 
+        "class": "Umgebung", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "Häuser GN Nachbargebäude West", 
+                "Häuser Umgebung"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2703679, 
+        "name": "Umgebung - Gebäude pink", 
+        "description": "Umgebung - Gebäude pink", 
+        "class": "Umgebung", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "Häuser Umgebung"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2703680, 
+        "name": "Umgebung - Gebäude orange", 
+        "description": "Umgebung - Gebäude orange", 
+        "class": "Umgebung", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "Häuser GN Nachbargebäude Ost"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2703681, 
+        "name": "Umgebung - Gebäude blau", 
+        "description": "Umgebung - Gebäude blau", 
+        "class": "Umgebung", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "Häuser Umgebung"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2703682, 
+        "name": "Umgebung - Gebäude violett", 
+        "description": "Umgebung - Gebäude violett", 
+        "class": "Umgebung", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "Häuser Umgebung"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2703683, 
+        "name": "Umgebung - Gebäude grün", 
+        "description": "Umgebung - Gebäude grün", 
+        "class": "Umgebung", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "Häuser Umgebung"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 2703684, 
+        "name": "Umgebung - Gebäude grau", 
+        "description": "Umgebung - Gebäude grau", 
+        "class": "Umgebung", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "Häuser Umgebung"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 3211763, 
+        "name": "Holz - HSB-Balken", 
+        "description": "Holz - HSB-Balken", 
+        "class": "Holz", 
+        "host_elements": {
+            "categories": [
+                "Structural Framing"
+            ], 
+            "types": [
+                "100x100"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Wood", 
+            "density_kg_m3": 559.0444
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 0.12, 
+            "density_kg_m3": 496
+        }
+    }, 
+    {
+        "revit_id": 3376888, 
+        "name": "Beton - C 25/30", 
+        "class": "Beton", 
+        "host_elements": {
+            "categories": [
+                "Assemblies", 
+                "Walls"
+            ], 
+            "types": [
+                "Fertigbeton - STB 200", 
+                "Massivwand029"
+            ]
+        }, 
+        "physical_asset": {
+            "lightweight": false, 
+            "concrete_compression_mpa": 25, 
+            "structural_class": "Concrete", 
+            "density_kg_m3": 2549.3
+        }
+    }, 
+    {
+        "revit_id": 3484685, 
+        "name": "Kunststoff_80-80-80", 
+        "class": "Glas", 
+        "host_elements": {
+            "categories": [
+                "Walls"
+            ], 
+            "types": [
+                "Beschichtung"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 4043891, 
+        "name": "Stahl, S 235", 
+        "description": "Eurocode Baustahl, S 235", 
+        "class": "Metall", 
+        "host_elements": {
+            "categories": [
+                "Assemblies"
+            ], 
+            "types": [
+                "Massivwand029", 
+                "Massivwand030", 
+                "Massivwand031", 
+                "Massivwand032", 
+                "Massivwand033", 
+                "Massivwand034", 
+                "Massivwand035"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Metal", 
+            "density_kg_m3": 7850
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 45, 
+            "density_kg_m3": 7850
+        }
+    }, 
+    {
+        "revit_id": 4054863, 
+        "name": "BSt 500 M(A)", 
+        "class": "Allgemein", 
+        "host_elements": {
+            "categories": [
+                "Assemblies", 
+                "Generic Models"
+            ], 
+            "types": [
+                "Trägerdecke 036", 
+                "Trägerdecke 038", 
+                "Typ1"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Metal", 
+            "density_kg_m3": 7852.7107
+        }
+    }, 
+    {
+        "revit_id": 4054864, 
+        "name": "BSt 500 M(B)", 
+        "class": "Allgemein", 
+        "host_elements": {
+            "categories": [
+                "Assemblies", 
+                "Generic Models"
+            ], 
+            "types": [
+                "Trägerdecke 036", 
+                "Trägerdecke 038", 
+                "Typ1"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Metal", 
+            "density_kg_m3": 7852.7107
+        }
+    }, 
+    {
+        "revit_id": 4183752, 
+        "name": "Holz - Astfichte Hirnholz", 
+        "description": "Holz - Astfichte", 
+        "class": "Holz", 
+        "host_elements": {
+            "categories": [
+                "Structural Framing"
+            ], 
+            "types": [
+                "100x00", 
+                "100x100", 
+                "100x80", 
+                "80x100", 
+                "Brüstungsriegel - 100x160", 
+                "Sturzriegel - 100x160"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Wood", 
+            "density_kg_m3": 559.0444
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 0.1, 
+            "density_kg_m3": 416
+        }
+    }, 
+    {
+        "revit_id": 4183757, 
+        "name": "Holz - Astfichte", 
+        "description": "Holz - Astfichte", 
+        "class": "Holz", 
+        "host_elements": {
+            "categories": [
+                "Structural Framing"
+            ], 
+            "types": [
+                "100x00", 
+                "100x100", 
+                "100x80", 
+                "80x100", 
+                "Brüstungsriegel - 100x160", 
+                "Sturzriegel - 100x160"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Wood", 
+            "density_kg_m3": 559.0444
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 0.1, 
+            "density_kg_m3": 416
+        }
+    }, 
+    {
+        "revit_id": 4185430, 
+        "name": "Holz - Astfichte senkrecht", 
+        "description": "Holz - Astfichte", 
+        "class": "Holz", 
+        "host_elements": {
+            "categories": [
+                "Structural Columns"
+            ], 
+            "types": [
+                "100x100", 
+                "100x219"
+            ]
+        }, 
+        "physical_asset": {
+            "structural_class": "Wood", 
+            "density_kg_m3": 559.0444
+        }, 
+        "thermal_asset": {
+            "thermal_conductivity_w_mk": 0.1, 
+            "density_kg_m3": 416
+        }
+    }, 
+    {
+        "revit_id": 4395656, 
+        "name": "Autodesk - Gehäuse", 
+        "description": "Autodesk - Mantel", 
+        "class": "Autodesk", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "Autodesk_Logo_Golden Nugget"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 4395657, 
+        "name": "Autodesk - Fuge", 
+        "description": "Autodesk - Schattenfuge", 
+        "class": "Autodesk", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "Autodesk_Logo_Golden Nugget"
+            ]
+        }
+    }, 
+    {
+        "revit_id": 4395663, 
+        "name": "Autodesk - Logo", 
+        "description": "Autodesk - Mantel", 
+        "class": "Autodesk", 
+        "host_elements": {
+            "categories": [
+                "Generic Models"
+            ], 
+            "types": [
+                "Autodesk_Logo_Golden Nugget"
+            ]
+        }
+    }
+]

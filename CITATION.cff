@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+title: "LCiA, Semantic Material Matching for BIM-Based LCA"
+message: "If you use LCiA or its published ground truth, please cite the thesis below."
+type: software
+authors:
+  - family-names: Elmalah
+    given-names: Hossamelden
+    affiliation: "RWTH Aachen University"
+repository-code: "https://github.com/HossamKhaled22/LCiA"
+abstract: >-
+  LCiA is a pyRevit extension for Autodesk Revit that matches BIM materials to
+  environmental datasets of the German ÖKOBAUDAT database. It replaces manual
+  keyword search with a ranked, confidence-scored shortlist: materials are
+  retrieved by meaning as well as by wording, queries are enriched with context
+  read from the model, and every suggestion carries a calibrated confidence value
+  that can be unfolded into its parts. All models run locally, so project data
+  never leaves the machine.
+keywords:
+  - building information modelling
+  - life cycle assessment
+  - ÖKOBAUDAT
+  - semantic retrieval
+  - material matching
+  - confidence calibration
+  - Autodesk Revit
+  - pyRevit
+license:
+  - Apache-2.0
+  - GPL-3.0-or-later
+license-url: "https://github.com/HossamKhaled22/LCiA/blob/main/LICENSING.md"
+year: 2026
+references:
+  - type: thesis
+    title: "AI-Powered Semantic Engine for Contextual BIM-Based LCA"
+    thesis-type: "MSc thesis"
+    authors:
+      - family-names: Elmalah
+        given-names: Hossamelden
+    institution:
+      name: "RWTH Aachen University"
+    year: 2026

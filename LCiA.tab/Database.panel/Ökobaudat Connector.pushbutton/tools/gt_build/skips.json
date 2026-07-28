@@ -1,0 +1,1593 @@
+[
+  {
+    "revit_id": 18435,
+    "name": "Default",
+    "description": "",
+    "class": "Miscellaneous",
+    "host_categories": [
+      "Curtain Panels"
+    ],
+    "host_types": [
+      "Solid",
+      "Threshold"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Revit system / placeholder material (no physical construction product behind it). Excluded from LCA mapping.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 18438,
+    "name": "Default Wall",
+    "description": "",
+    "class": "Miscellaneous",
+    "host_categories": [
+      "Columns",
+      "Walls"
+    ],
+    "host_types": [
+      "24\"D x 24\"W",
+      "Exterior - 12 5/8\" Rainscreen w Insultation on Metal Stud (Alley)",
+      "Generic - 4\"",
+      "Generic - 6\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Revit system / placeholder material (no physical construction product behind it). Excluded from LCA mapping.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 18974,
+    "name": "Air",
+    "description": "Air",
+    "class": "Gas",
+    "host_categories": [
+      "Walls"
+    ],
+    "host_types": [
+      "Block 37 Pilaster",
+      "Block 39 Pilaster",
+      "Exterior - 10 1/4\" Rainscreen w Insultation on Metal Stud",
+      "Exterior - 12 5/8\" Rainscreen w Insultation on Metal Stud",
+      "Exterior - 13 5/8\" Rainscreen (Two Sides) w Insultation on Metal Stud",
+      "Exterior - 14 5/8\" Rainscreen w Insultation on Metal Stud",
+      "Exterior - 5 3/8\" Rainscreen w Insultation (for Concrete Core Walls)",
+      "Exterior - 9 7/8\" EIFS on Mtl. Stud",
+      "Solar Wall (L5)",
+      "Solar Wall (Multi-Level)",
+      "Solar Wall (Parapet)"
+    ],
+    "physical_asset": {
+      "structural_class": "Gas",
+      "density_kg_m3": 1.2
+    },
+    "thermal_asset": {
+      "density_kg_m3": 1.2,
+      "thermal_conductivity_w_mk": 0.025
+    },
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Air gap / cavity has no associated material EPD in ÖKOBAUDAT. LCA practice treats unfilled cavities as zero embodied impact (no product is consumed), so this layer is excluded from BIM→EPD mapping rather than matched.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 35335,
+    "name": "Laminate, Ivory, Matte",
+    "description": "Plastic Laminate - Ivory, Matte",
+    "class": "Plastic",
+    "host_categories": [
+      "Furniture",
+      "Plumbing Fixtures",
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "18\" x 48\"",
+      "18\" x 72\"",
+      "19\" Seat Height",
+      "36\" Diameter",
+      "60\" Diameter",
+      "96\" x 12\" x 84\"",
+      "TableWithUmbrella",
+      "Toilet-Domestic-3D"
+    ],
+    "physical_asset": {
+      "structural_class": "Plastic",
+      "density_kg_m3": 1380
+    },
+    "thermal_asset": {
+      "density_kg_m3": 1800,
+      "thermal_conductivity_w_mk": 0.209
+    },
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 36879,
+    "name": "Parking Stripe",
+    "description": "",
+    "class": "Paint",
+    "host_categories": [
+      "Parking",
+      "Top Rails"
+    ],
+    "host_types": [
+      "9' x 18' (4' Aisle)",
+      "9' x 18' (8' Aisle)",
+      "9' x 18' - 90 deg",
+      "Road Striping"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Pure paint / colour finish — a coating appearance only, with no bulk construction-product layer to declare. Out of the construction-material scope of this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 78544,
+    "name": "Poche",
+    "description": "",
+    "class": "System",
+    "host_categories": [
+      "Cameras"
+    ],
+    "host_types": [
+      "3D Coordination",
+      "3D View"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Revit system / placeholder material (no physical construction product behind it). Excluded from LCA mapping.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 135528,
+    "name": "Default Light Source",
+    "description": "",
+    "class": "Generic",
+    "host_categories": [
+      "Lighting Fixtures"
+    ],
+    "host_types": [
+      "100W - 120V",
+      "18\" D x 15\" H",
+      "18\" D x 5\" H"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Revit system / placeholder material (no physical construction product behind it). Excluded from LCA mapping.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 385173,
+    "name": "Metal - Paint Finish - Grey",
+    "description": "",
+    "class": "Paint",
+    "host_categories": [
+      "Doors"
+    ],
+    "host_types": [
+      "26\" x 84\"",
+      "34\" x 84\" (90 MIN)",
+      "36\" x 84\"",
+      "36\" x 84\" (180 MIN)",
+      "36\" x 84\" (20 MIN)",
+      "36\" x 84\" (45 MIN)",
+      "36\" x 84\" (60 MIN)",
+      "36\" x 84\" (90 MIN)",
+      "36\" x 96\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Pure paint / colour finish — a coating appearance only, with no bulk construction-product layer to declare. Out of the construction-material scope of this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 435538,
+    "name": "Pine",
+    "description": "Pinus Echinata",
+    "class": "Wood",
+    "host_categories": [
+      "Furniture"
+    ],
+    "host_types": [
+      "36\" Diameter",
+      "60\" Diameter"
+    ],
+    "physical_asset": {
+      "structural_class": "Wood",
+      "density_kg_m3": 570.2573
+    },
+    "thermal_asset": {
+      "density_kg_m3": 560,
+      "thermal_conductivity_w_mk": 0.12
+    },
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 449947,
+    "name": "Cabinets",
+    "description": "",
+    "class": "Miscellaneous",
+    "host_categories": [
+      "Casework",
+      "Slab Edges",
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "24\"W x 40\"H",
+      "27\"",
+      "27\"W x 28\"H",
+      "36\"",
+      "48\"",
+      "72\"",
+      "Crown Molding - Cabinets",
+      "Kitchenette - Medium"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 449951,
+    "name": "Cabinets - Handles",
+    "description": "",
+    "class": "Metal",
+    "host_categories": [
+      "Casework",
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "24\"W x 40\"H",
+      "27\"",
+      "27\"W x 28\"H",
+      "36\"",
+      "48\"",
+      "72\"",
+      "Kitchenette - Medium"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 450621,
+    "name": "Counter Top",
+    "description": "",
+    "class": "Wood",
+    "host_categories": [
+      "Casework"
+    ],
+    "host_types": [
+      "18\" Depth",
+      "24\" Depth",
+      "3' 7 1/2\" Height",
+      "3' Height",
+      "72\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 453617,
+    "name": "Metal - Painted - Grey",
+    "description": "",
+    "class": "Paint",
+    "host_categories": [
+      "Doors"
+    ],
+    "host_types": [
+      "72\" x 84\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Pure paint / colour finish — a coating appearance only, with no bulk construction-product layer to declare. Out of the construction-material scope of this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 453621,
+    "name": "Metal Door - Brindle",
+    "description": "",
+    "class": "Paint",
+    "host_categories": [
+      "Doors"
+    ],
+    "host_types": [
+      "72\" x 84\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Pure paint / colour finish — a coating appearance only, with no bulk construction-product layer to declare. Out of the construction-material scope of this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 465406,
+    "name": "Metal - Paint Finish - Ivory, Glossy",
+    "description": "",
+    "class": "Paint",
+    "host_categories": [
+      "Lighting Fixtures"
+    ],
+    "host_types": [
+      "68W Rectangle"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Pure paint / colour finish — a coating appearance only, with no bulk construction-product layer to declare. Out of the construction-material scope of this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 470591,
+    "name": "Appliance - Stainless Steel",
+    "description": "Stainless Steel 18/8",
+    "class": "Metal",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "24\"",
+      "24\" x 24\" x 34\""
+    ],
+    "physical_asset": {
+      "structural_class": "Metal",
+      "density_kg_m3": 8080
+    },
+    "thermal_asset": {
+      "density_kg_m3": 8000,
+      "thermal_conductivity_w_mk": 16.2
+    },
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 470604,
+    "name": "Appliance - Gasket",
+    "description": "",
+    "class": "Miscellaneous",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "24\" x 24\" x 34\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 470611,
+    "name": "Appliance - Steel - Black",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "24\"",
+      "24\" x 24\" x 34\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 472710,
+    "name": "Metal - Steel",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Vertical Circulation"
+    ],
+    "host_types": [
+      "3500 lbs"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 473949,
+    "name": "Metal - Aluminum, Brushed",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "Grab Bar"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 720110,
+    "name": "Elevator Annunciator Escutcheon",
+    "description": "",
+    "class": "Metal",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "48\" x 84\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 720111,
+    "name": "Elevator Annunicator Buttons",
+    "description": "",
+    "class": "Miscellaneous",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "48\" x 84\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 720114,
+    "name": "Elevator Call Escutcheon",
+    "description": "",
+    "class": "Miscellaneous",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "48\" x 84\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 720115,
+    "name": "Elevator Call Buttons",
+    "description": "",
+    "class": "Miscellaneous",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "48\" x 84\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 730340,
+    "name": "Plastic - Formed Plastic - White",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "35\" x 20\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 730868,
+    "name": "Metal - Stainless",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "Dispenser-Sanitary Napkin",
+      "Dispenser-Towel-Tall"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 731925,
+    "name": "Mirror",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "28\" x 48\"",
+      "36\" x 48\"",
+      "54\" x 48\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 737421,
+    "name": "Textile - Bamboo Weave",
+    "description": "",
+    "class": "Fabric",
+    "host_categories": [
+      "Furniture"
+    ],
+    "host_types": [
+      "Chair-Breuer"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 764704,
+    "name": "Appliance - Polycarbonate",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "24\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 764706,
+    "name": "Appliance - Controls",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "24\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 764707,
+    "name": "Appliance - Door Trim",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "24\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 764709,
+    "name": "Appliance - Panel",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "24\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 784137,
+    "name": "Metal - Paint Finish - Dark Gray, Matte",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Food Service Equipment",
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "18\" x 48\"",
+      "18\" x 72\"",
+      "72\" Length"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 790065,
+    "name": "Paint - White",
+    "description": "",
+    "class": "Paint",
+    "host_categories": [
+      "Site"
+    ],
+    "host_types": [
+      "Direction Arrow - Straight",
+      "Parking Symbol - ADA"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Pure paint / colour finish — a coating appearance only, with no bulk construction-product layer to declare. Out of the construction-material scope of this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 805649,
+    "name": "Cabinet",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Casework"
+    ],
+    "host_types": [
+      "30\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 974574,
+    "name": "Solar 72 Cell (Square)",
+    "description": "",
+    "class": "Generic",
+    "host_categories": [
+      "Curtain Panels"
+    ],
+    "host_types": [
+      "Square"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Building-services / equipment item (e.g. PV module). Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 978846,
+    "name": "Solar Infill (No Cells)",
+    "description": "Solar Panels",
+    "class": "Generic",
+    "host_categories": [
+      "Curtain Panels"
+    ],
+    "host_types": [
+      "Solar Wall Edges"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Building-services / equipment item (e.g. PV module). Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1106366,
+    "name": "Matte Black",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Food Service Equipment"
+    ],
+    "host_types": [
+      "36\" x 38\"",
+      "60\" x 31\""
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1106368,
+    "name": "Metal - Powder Coated - White",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Food Service Equipment"
+    ],
+    "host_types": [
+      "72\" Length"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1106369,
+    "name": "Plastic - Brown",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Food Service Equipment"
+    ],
+    "host_types": [
+      "Beverage Dispenser"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1106370,
+    "name": "Aluminum Satin Bronze",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Food Service Equipment",
+      "Generic Models"
+    ],
+    "host_types": [
+      "10\" Trebuchet MS",
+      "18\" Trebuchet MS",
+      "Beverage Dispenser"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1106371,
+    "name": "Rubber - Black",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Food Service Equipment"
+    ],
+    "host_types": [
+      "Refrig Prep"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1106374,
+    "name": "Wood",
+    "description": "Generic wood",
+    "class": "Wood",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "TrashContainer"
+    ],
+    "physical_asset": {
+      "structural_class": "Wood",
+      "density_kg_m3": 570.2573
+    },
+    "thermal_asset": {
+      "density_kg_m3": 496,
+      "thermal_conductivity_w_mk": 0.12
+    },
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1106375,
+    "name": "Plastic - White",
+    "description": "",
+    "class": "System",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "Soap Dispenser",
+      "Trash Can"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Revit system / placeholder material (no physical construction product behind it). Excluded from LCA mapping.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1106378,
+    "name": "Plastic - Black - Matte",
+    "description": "",
+    "class": "Plastic",
+    "host_categories": [
+      "Food Service Equipment"
+    ],
+    "host_types": [
+      "Refrig_Base_wDrawers",
+      "Twist Waste"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1106380,
+    "name": "Plastic-Blue",
+    "description": "Polybutylene terephthalate",
+    "class": "Plastic",
+    "host_categories": [
+      "Plumbing Fixtures"
+    ],
+    "host_types": [
+      "Faucet_Swing",
+      "Hand Sink"
+    ],
+    "physical_asset": {
+      "structural_class": "Plastic",
+      "density_kg_m3": 1310
+    },
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1106381,
+    "name": "Plastic-Red",
+    "description": "Polybutylene terephthalate",
+    "class": "Plastic",
+    "host_categories": [
+      "Plumbing Fixtures"
+    ],
+    "host_types": [
+      "Faucet_Swing",
+      "Hand Sink"
+    ],
+    "physical_asset": {
+      "structural_class": "Plastic",
+      "density_kg_m3": 1310
+    },
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1106382,
+    "name": "Plastic - Generic - Gray",
+    "description": "",
+    "class": "Plastic",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "16\" x 18\" x 19\" - Cash Drawer"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1106385,
+    "name": "Plastic - Generic - Charcoal",
+    "description": "",
+    "class": "Plastic",
+    "host_categories": [
+      "Food Service Equipment",
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "16\" x 18\" x 19\" - Cash Drawer",
+      "28\" x 34\"",
+      "39\" x 34\"",
+      "Motion_Towel_Dispenser"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1231151,
+    "name": "Tree Grate",
+    "description": "",
+    "class": "Generic",
+    "host_categories": [
+      "Site"
+    ],
+    "host_types": [
+      "Tree Grate"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Living / landscape or site element (vegetation, soil, site furniture). No manufactured construction-product EPD applies; out of scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1233741,
+    "name": "Grass",
+    "description": "Grass",
+    "class": "Generic",
+    "host_categories": [
+      "Floors"
+    ],
+    "host_types": [
+      "Landscape - Lawn"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Living / landscape or site element (vegetation, soil, site furniture). No manufactured construction-product EPD applies; out of scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1237324,
+    "name": "Tree Canopy",
+    "description": "",
+    "class": "Generic",
+    "host_categories": [
+      "Planting"
+    ],
+    "host_types": [
+      "15' Canopy"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Living / landscape or site element (vegetation, soil, site furniture). No manufactured construction-product EPD applies; out of scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1237325,
+    "name": "Tree Trunk",
+    "description": "",
+    "class": "Generic",
+    "host_categories": [
+      "Planting"
+    ],
+    "host_types": [
+      "15' Canopy"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Living / landscape or site element (vegetation, soil, site furniture). No manufactured construction-product EPD applies; out of scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1242014,
+    "name": "Red Plastic",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Furniture"
+    ],
+    "host_types": [
+      "Banquette - Double",
+      "Banquette - Single"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1288602,
+    "name": "Linen, White",
+    "description": "Linen, white",
+    "class": "Textile",
+    "host_categories": [
+      "Furniture"
+    ],
+    "host_types": [
+      "King 78\" x 83\""
+    ],
+    "physical_asset": {
+      "structural_class": "Basic",
+      "density_kg_m3": 152
+    },
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1343483,
+    "name": "Living Wall",
+    "description": "",
+    "class": "Generic",
+    "host_categories": [
+      "Walls"
+    ],
+    "host_types": [
+      "Living Wall"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Living / landscape or site element (vegetation, soil, site furniture). No manufactured construction-product EPD applies; out of scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1383170,
+    "name": "Soil",
+    "description": "Soil",
+    "class": "Generic",
+    "host_categories": [
+      "Hardscape",
+      "Site"
+    ],
+    "host_types": [
+      "42\"\"L x 20\"W x 24\"H",
+      "60\"L x 20\"W x 24\"H",
+      "72\"L x 24\"W x 24\"H",
+      "96\"L x 20\"W x 24\"H",
+      "Potted Tree"
+    ],
+    "physical_asset": {
+      "structural_class": "Basic",
+      "density_kg_m3": 1300
+    },
+    "thermal_asset": {
+      "density_kg_m3": 1300,
+      "thermal_conductivity_w_mk": 0.837
+    },
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Living / landscape or site element (vegetation, soil, site furniture). No manufactured construction-product EPD applies; out of scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1397158,
+    "name": "Planting Bed",
+    "description": "Planting Bed",
+    "class": "Generic",
+    "host_categories": [
+      "Floors"
+    ],
+    "host_types": [
+      "Roof - Planting Bed"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Living / landscape or site element (vegetation, soil, site furniture). No manufactured construction-product EPD applies; out of scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1402087,
+    "name": "Sculpture Bed",
+    "description": "Sculpture Bed",
+    "class": "Generic",
+    "host_categories": [
+      "Floors"
+    ],
+    "host_types": [
+      "Roof - Sculpture Bed"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Living / landscape or site element (vegetation, soil, site furniture). No manufactured construction-product EPD applies; out of scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 1483994,
+    "name": "Acrylic, Clear",
+    "description": "Acrylic sheet glazing",
+    "class": "Plastic",
+    "host_categories": [
+      "Generic Models"
+    ],
+    "host_types": [
+      "AC_Bandstand Canopy"
+    ],
+    "physical_asset": {
+      "structural_class": "Plastic",
+      "density_kg_m3": 1190
+    },
+    "thermal_asset": {
+      "density_kg_m3": 1180,
+      "thermal_conductivity_w_mk": 0.251
+    },
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 2073722,
+    "name": "Paint - White Glossy",
+    "description": "",
+    "class": "Paint",
+    "host_categories": [
+      "Doors",
+      "Wall Sweeps"
+    ],
+    "host_types": [
+      "36\" x 84\" (Cores)",
+      "Base_Simple"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Pure paint / colour finish — a coating appearance only, with no bulk construction-product layer to declare. Out of the construction-material scope of this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 2076458,
+    "name": "Paint - Grey Textured",
+    "description": "",
+    "class": "Paint",
+    "host_categories": [
+      "Wall Sweeps",
+      "Walls"
+    ],
+    "host_types": [
+      "Chase - GWB & Metal Stud 4 1/4\"",
+      "Crown_Flat"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Pure paint / colour finish — a coating appearance only, with no bulk construction-product layer to declare. Out of the construction-material scope of this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 2108591,
+    "name": "Leather",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Furniture"
+    ],
+    "host_types": [
+      "Chair-Kinder"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Furniture / casework / appliance / fixture component, not a building-fabric construction material. Out of the construction-only scope chosen for this ground truth.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 2108592,
+    "name": "Metal - Chrome",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Furniture"
+    ],
+    "host_types": [
+      "Chair-Kinder"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 2109186,
+    "name": "Laminate - Ivory,Matte",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Furniture"
+    ],
+    "host_types": [
+      "20\" Diameter"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 2250032,
+    "name": "Metal - Aluminum",
+    "description": "",
+    "class": "Unassigned",
+    "host_categories": [
+      "Specialty Equipment"
+    ],
+    "host_types": [
+      "Dispenser-Towel-Tall"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Used only on furniture / fixtures / equipment (no construction host element). The bulk substance may be a real material, but as a fixture finish it is out of the construction-only scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 2282191,
+    "name": "Grass - Turf",
+    "description": "Artificial Turf",
+    "class": "Generic",
+    "host_categories": [
+      "Floors"
+    ],
+    "host_types": [
+      "Roof - Turf"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Living / landscape or site element (vegetation, soil, site furniture). No manufactured construction-product EPD applies; out of scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 2456791,
+    "name": "Umbrella",
+    "description": "",
+    "class": "Generic",
+    "host_categories": [
+      "Furniture"
+    ],
+    "host_types": [
+      "TableWithUmbrella"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Living / landscape or site element (vegetation, soil, site furniture). No manufactured construction-product EPD applies; out of scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  },
+  {
+    "revit_id": 2456793,
+    "name": "Supports",
+    "description": "",
+    "class": "Generic",
+    "host_categories": [
+      "Furniture"
+    ],
+    "host_types": [
+      "TableWithUmbrella"
+    ],
+    "physical_asset": null,
+    "thermal_asset": null,
+    "promoted": false,
+    "label": "skip",
+    "skip_reason": "Living / landscape or site element (vegetation, soil, site furniture). No manufactured construction-product EPD applies; out of scope.",
+    "expected_classification_path": null,
+    "correct_uuid": null,
+    "acceptable_uuids": [],
+    "top_10": []
+  }
+]

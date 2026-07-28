@@ -1,0 +1,693 @@
+{
+  "datastock": "a2_sphera",
+  "lang": "en",
+  "dataset_count": 2383,
+  "match_count": 76,
+  "skip_count": 69,
+  "matchable": [
+    {
+      "revit_id": 18439,
+      "name": "Glass",
+      "class": "Glass",
+      "family": "glass",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/18439.json",
+      "candidate_count": 125
+    },
+    {
+      "revit_id": 18939,
+      "name": "Concrete, Cast-in-Place gray",
+      "class": "Concrete",
+      "family": "mineral_struct",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/18939.json",
+      "candidate_count": 114
+    },
+    {
+      "revit_id": 18940,
+      "name": "Concrete, Precast",
+      "class": "Concrete",
+      "family": "mineral_struct",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/18940.json",
+      "candidate_count": 100
+    },
+    {
+      "revit_id": 18941,
+      "name": "Brick, Common",
+      "class": "Masonry",
+      "family": "mineral_struct",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/18941.json",
+      "candidate_count": 102
+    },
+    {
+      "revit_id": 18942,
+      "name": "Concrete Masonry Units",
+      "class": "Masonry",
+      "family": "mineral_struct",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/18942.json",
+      "candidate_count": 102
+    },
+    {
+      "revit_id": 18946,
+      "name": "Metal Stud Layer",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/18946.json",
+      "candidate_count": 116
+    },
+    {
+      "revit_id": 18949,
+      "name": "Metal Deck",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/18949.json",
+      "candidate_count": 106
+    },
+    {
+      "revit_id": 18953,
+      "name": "Aluminum",
+      "class": "Metal",
+      "family": "aluminium",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/18953.json",
+      "candidate_count": 118
+    },
+    {
+      "revit_id": 18954,
+      "name": "Metal Furring",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/18954.json",
+      "candidate_count": 106
+    },
+    {
+      "revit_id": 18957,
+      "name": "Plywood, Sheathing",
+      "class": "Wood",
+      "family": "wood_panel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/18957.json",
+      "candidate_count": 101
+    },
+    {
+      "revit_id": 18959,
+      "name": "Oak Flooring",
+      "class": "Wood",
+      "family": "wood",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/18959.json",
+      "candidate_count": 100
+    },
+    {
+      "revit_id": 18967,
+      "name": "EIFS, Exterior Insulation",
+      "class": "Generic",
+      "family": "insulation",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/18967.json",
+      "candidate_count": 104
+    },
+    {
+      "revit_id": 18977,
+      "name": "Rigid insulation",
+      "class": "Generic",
+      "family": "insulation",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/18977.json",
+      "candidate_count": 100
+    },
+    {
+      "revit_id": 18982,
+      "name": "Vapor Retarder",
+      "class": "Generic",
+      "family": "membrane",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/18982.json",
+      "candidate_count": 124
+    },
+    {
+      "revit_id": 18986,
+      "name": "Gypsum Wall Board",
+      "class": "Generic",
+      "family": "gypsum",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/18986.json",
+      "candidate_count": 100
+    },
+    {
+      "revit_id": 24146,
+      "name": "Structure, Wood Joist/Rafter Layer",
+      "class": "Wood",
+      "family": "wood",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/24146.json",
+      "candidate_count": 103
+    },
+    {
+      "revit_id": 24202,
+      "name": "Concrete, Lightweight",
+      "class": "Concrete",
+      "family": "mineral_struct",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/24202.json",
+      "candidate_count": 105
+    },
+    {
+      "revit_id": 24244,
+      "name": "Roofing, EPDM Membrane",
+      "class": "Generic",
+      "family": "membrane",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/24244.json",
+      "candidate_count": 108
+    },
+    {
+      "revit_id": 35341,
+      "name": "Steel, Chrome Plated",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": true,
+      "candidate_file": "tools/gt_build/candidates/35341.json",
+      "candidate_count": 106
+    },
+    {
+      "revit_id": 128891,
+      "name": "Steel ASTM A992",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/128891.json",
+      "candidate_count": 112
+    },
+    {
+      "revit_id": 336821,
+      "name": "Clad - White",
+      "class": "Wood",
+      "family": "wood",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/336821.json",
+      "candidate_count": 101
+    },
+    {
+      "revit_id": 336822,
+      "name": "Wood - Stained",
+      "class": "Wood",
+      "family": "wood",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/336822.json",
+      "candidate_count": 101
+    },
+    {
+      "revit_id": 385171,
+      "name": "Wood - Birch",
+      "class": "Wood",
+      "family": "wood",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/385171.json",
+      "candidate_count": 101
+    },
+    {
+      "revit_id": 435571,
+      "name": "CMU, Split Face",
+      "class": "Masonry",
+      "family": "mineral_struct",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/435571.json",
+      "candidate_count": 102
+    },
+    {
+      "revit_id": 450622,
+      "name": "Steel, Polished",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": true,
+      "candidate_file": "tools/gt_build/candidates/450622.json",
+      "candidate_count": 106
+    },
+    {
+      "revit_id": 453620,
+      "name": "Metal - Aluminium",
+      "class": "Metal",
+      "family": "aluminium",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/453620.json",
+      "candidate_count": 103
+    },
+    {
+      "revit_id": 465404,
+      "name": "Glass - White, High Luminance",
+      "class": "Glass",
+      "family": "glass",
+      "promoted": true,
+      "candidate_file": "tools/gt_build/candidates/465404.json",
+      "candidate_count": 114
+    },
+    {
+      "revit_id": 466339,
+      "name": "Steel, Paint Finish, Dark Gray, Matte",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/466339.json",
+      "candidate_count": 107
+    },
+    {
+      "revit_id": 466340,
+      "name": "Glass, White, High Luminance",
+      "class": "Glass",
+      "family": "glass",
+      "promoted": true,
+      "candidate_file": "tools/gt_build/candidates/466340.json",
+      "candidate_count": 128
+    },
+    {
+      "revit_id": 468384,
+      "name": "Porcelain, Ivory",
+      "class": "Ceramic",
+      "family": "sanitary",
+      "promoted": true,
+      "candidate_file": "tools/gt_build/candidates/468384.json",
+      "candidate_count": 33
+    },
+    {
+      "revit_id": 469172,
+      "name": "Porcelain, Linen",
+      "class": "Ceramic",
+      "family": "sanitary",
+      "promoted": true,
+      "candidate_file": "tools/gt_build/candidates/469172.json",
+      "candidate_count": 33
+    },
+    {
+      "revit_id": 593863,
+      "name": "Birch",
+      "class": "Wood",
+      "family": "wood",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/593863.json",
+      "candidate_count": 101
+    },
+    {
+      "revit_id": 613942,
+      "name": "Steel, Paint Finish, Dark Gray",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/613942.json",
+      "candidate_count": 107
+    },
+    {
+      "revit_id": 778536,
+      "name": "Steel, Paint Finish, Ivory, Glossy",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": true,
+      "candidate_file": "tools/gt_build/candidates/778536.json",
+      "candidate_count": 107
+    },
+    {
+      "revit_id": 870414,
+      "name": "Porcelain - Ivory",
+      "class": "Unassigned",
+      "family": "sanitary",
+      "promoted": true,
+      "candidate_file": "tools/gt_build/candidates/870414.json",
+      "candidate_count": 30
+    },
+    {
+      "revit_id": 870415,
+      "name": "Metal - Steel, Polished",
+      "class": "Unassigned",
+      "family": "steel",
+      "promoted": true,
+      "candidate_file": "tools/gt_build/candidates/870415.json",
+      "candidate_count": 106
+    },
+    {
+      "revit_id": 930496,
+      "name": "Aluminum Clad (Orange)",
+      "class": "Wood",
+      "family": "aluminium",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/930496.json",
+      "candidate_count": 139
+    },
+    {
+      "revit_id": 930559,
+      "name": "Aluminum Clad (Black)",
+      "class": "Wood",
+      "family": "aluminium",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/930559.json",
+      "candidate_count": 139
+    },
+    {
+      "revit_id": 937249,
+      "name": "Oriented Strand Board",
+      "class": "Wood",
+      "family": "wood_panel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/937249.json",
+      "candidate_count": 109
+    },
+    {
+      "revit_id": 1104850,
+      "name": "Asphalt, Pavement, Light Grey",
+      "class": "Generic",
+      "family": "asphalt",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1104850.json",
+      "candidate_count": 69
+    },
+    {
+      "revit_id": 1106372,
+      "name": "Stainless Steel, Polished",
+      "class": "Unassigned",
+      "family": "steel",
+      "promoted": true,
+      "candidate_file": "tools/gt_build/candidates/1106372.json",
+      "candidate_count": 124
+    },
+    {
+      "revit_id": 1106373,
+      "name": "Stainless Steel, Brushed",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": true,
+      "candidate_file": "tools/gt_build/candidates/1106373.json",
+      "candidate_count": 124
+    },
+    {
+      "revit_id": 1106386,
+      "name": "Steel",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1106386.json",
+      "candidate_count": 112
+    },
+    {
+      "revit_id": 1220087,
+      "name": "Stone Tiles",
+      "class": "Generic",
+      "family": "tile_stone",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1220087.json",
+      "candidate_count": 100
+    },
+    {
+      "revit_id": 1295335,
+      "name": "Shaft Liner",
+      "class": "Generic",
+      "family": "gypsum",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1295335.json",
+      "candidate_count": 100
+    },
+    {
+      "revit_id": 1337227,
+      "name": "Steel, Paint Finish, Ivory, Matte",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1337227.json",
+      "candidate_count": 107
+    },
+    {
+      "revit_id": 1383173,
+      "name": "Pea Stone - Brown",
+      "class": "Concrete",
+      "family": "aggregate",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1383173.json",
+      "candidate_count": 100
+    },
+    {
+      "revit_id": 1406787,
+      "name": "Concrete, Precast Smooth, Light Grey",
+      "class": "Concrete",
+      "family": "mineral_struct",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1406787.json",
+      "candidate_count": 100
+    },
+    {
+      "revit_id": 1419906,
+      "name": "Glass, Frosted",
+      "class": "Glass",
+      "family": "glass",
+      "promoted": true,
+      "candidate_file": "tools/gt_build/candidates/1419906.json",
+      "candidate_count": 128
+    },
+    {
+      "revit_id": 1420526,
+      "name": "Steel, Paint Finish, Black",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": true,
+      "candidate_file": "tools/gt_build/candidates/1420526.json",
+      "candidate_count": 107
+    },
+    {
+      "revit_id": 1420527,
+      "name": "Steel, Paint Finish, White",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": true,
+      "candidate_file": "tools/gt_build/candidates/1420527.json",
+      "candidate_count": 107
+    },
+    {
+      "revit_id": 1464536,
+      "name": "Aluminum - Anodized Rough (Black)",
+      "class": "Metal",
+      "family": "aluminium",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1464536.json",
+      "candidate_count": 116
+    },
+    {
+      "revit_id": 1464537,
+      "name": "Aluminum - Anodized Rough (Grey)",
+      "class": "Metal",
+      "family": "aluminium",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1464537.json",
+      "candidate_count": 116
+    },
+    {
+      "revit_id": 1483290,
+      "name": "Gypsum Sheathing",
+      "class": "Generic",
+      "family": "gypsum",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1483290.json",
+      "candidate_count": 100
+    },
+    {
+      "revit_id": 1483426,
+      "name": "Metal Panels 50\"x60\" - Brown",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1483426.json",
+      "candidate_count": 139
+    },
+    {
+      "revit_id": 1483428,
+      "name": "Metal Panels 50\"x60\" - Light Grey",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1483428.json",
+      "candidate_count": 139
+    },
+    {
+      "revit_id": 1483430,
+      "name": "Metal Panels 50\"x60\" - White",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1483430.json",
+      "candidate_count": 139
+    },
+    {
+      "revit_id": 1500923,
+      "name": "Iron, Wrought",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1500923.json",
+      "candidate_count": 101
+    },
+    {
+      "revit_id": 1557292,
+      "name": "Terrazzo",
+      "class": "Generic",
+      "family": "terrazzo",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1557292.json",
+      "candidate_count": 145
+    },
+    {
+      "revit_id": 1557297,
+      "name": "Bronze, Architectural",
+      "class": "Metal",
+      "family": "copper",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1557297.json",
+      "candidate_count": 136
+    },
+    {
+      "revit_id": 1660388,
+      "name": "metal - sheet metal",
+      "class": "Unassigned",
+      "family": "steel",
+      "promoted": true,
+      "candidate_file": "tools/gt_build/candidates/1660388.json",
+      "candidate_count": 127
+    },
+    {
+      "revit_id": 1660456,
+      "name": "Brick, Dark Blend, Soldier",
+      "class": "Masonry",
+      "family": "mineral_struct",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1660456.json",
+      "candidate_count": 102
+    },
+    {
+      "revit_id": 1924355,
+      "name": "Roofing.Membrane.TPO",
+      "class": "Thermal and Moisture Protection",
+      "family": "membrane",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1924355.json",
+      "candidate_count": 104
+    },
+    {
+      "revit_id": 1924356,
+      "name": "Sheathing Roof Board",
+      "class": "Sheathing",
+      "family": "mineral_board",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1924356.json",
+      "candidate_count": 100
+    },
+    {
+      "revit_id": 1924357,
+      "name": "Weatherproofing.Vapor Barrier.6 Mil",
+      "class": "Thermal and Moisture Protection",
+      "family": "membrane",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1924357.json",
+      "candidate_count": 133
+    },
+    {
+      "revit_id": 1924358,
+      "name": "Rigid insulation, Tapered",
+      "class": "Generic",
+      "family": "insulation",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1924358.json",
+      "candidate_count": 100
+    },
+    {
+      "revit_id": 1964624,
+      "name": "Metal Parapet - White",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1964624.json",
+      "candidate_count": 135
+    },
+    {
+      "revit_id": 1996715,
+      "name": "FE_Brick - Running - Brown 2 1/2\" x 8\"",
+      "class": "Masonry",
+      "family": "mineral_struct",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1996715.json",
+      "candidate_count": 102
+    },
+    {
+      "revit_id": 1999690,
+      "name": "FE_Brick - Running - Grey 2\" x 8\"",
+      "class": "Masonry",
+      "family": "mineral_struct",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/1999690.json",
+      "candidate_count": 102
+    },
+    {
+      "revit_id": 2045804,
+      "name": "Steel Rusted",
+      "class": "Metal",
+      "family": "steel",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/2045804.json",
+      "candidate_count": 106
+    },
+    {
+      "revit_id": 2077092,
+      "name": "Concrete, Polished",
+      "class": "Concrete",
+      "family": "mineral_struct",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/2077092.json",
+      "candidate_count": 100
+    },
+    {
+      "revit_id": 2077616,
+      "name": "Oak Flooring, Espresso",
+      "class": "Wood",
+      "family": "wood",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/2077616.json",
+      "candidate_count": 100
+    },
+    {
+      "revit_id": 2114498,
+      "name": "Ceramic - Wood Pattern",
+      "class": "Wood",
+      "family": "tile_stone",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/2114498.json",
+      "candidate_count": 100
+    },
+    {
+      "revit_id": 2130336,
+      "name": "Wood - Teak",
+      "class": "Wood",
+      "family": "wood",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/2130336.json",
+      "candidate_count": 101
+    },
+    {
+      "revit_id": 2282240,
+      "name": "Paving - Brick Border",
+      "class": "Masonry",
+      "family": "mineral_struct",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/2282240.json",
+      "candidate_count": 105
+    },
+    {
+      "revit_id": 2282259,
+      "name": "Exterior Decking",
+      "class": "Wood",
+      "family": "wood",
+      "promoted": false,
+      "candidate_file": "tools/gt_build/candidates/2282259.json",
+      "candidate_count": 101
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+18435	Default	Miscellaneous		Curtain Panels			
+18438	Default Wall	Miscellaneous		Columns,Walls			
+18439	Glass	Glass	Soda Lime Glass	Casework,Curtain Panels,Doors,Lighting Fixtures,Windows	2420		1.1
+18939	Concrete, Cast-in-Place gray	Concrete	Cast-in-place concrete	Columns,Floors,Roofs,Runs,Stairs,Walls	2407.3117	24.1329	1.046
+18940	Concrete, Precast	Concrete	Precast concrete	Floors,Lighting Fixtures	2407.3117	34.4756	1.046
+18941	Brick, Common	Masonry	Common brick	Floors	1950		0.54
+18942	Concrete Masonry Units	Masonry	Concrete masonry units	Walls	2407.3117	24.1329	1.3
+18946	Metal Stud Layer	Metal	Light gauge steel framing, thermal air layer	Ceilings,Curtain Panels,Floors,Walls	7850		0.025
+18949	Metal Deck	Metal	Steel, mill finish	Roofs	7850		45
+18953	Aluminum	Metal	Aluminum 6061	Curtain Wall Mullions,Doors,Lighting Fixtures	2710		230
+18954	Metal Furring	Metal	Light gauge steel furring	Columns,Walls	7850		45
+18957	Plywood, Sheathing	Wood	Plywood, sheathing grade	Floors,Walls	552		0.106
+18959	Oak Flooring	Wood	Quercus Rubra	Ramps,Runs,Stairs	673		0.18
+18967	EIFS, Exterior Insulation	Generic	EIFS - Exterior Insulation	Walls	23		0.023
+18974	Air	Gas	Air	Walls	1.2		0.025
+18977	Rigid insulation	Generic	Rigid foam insulation board	Curtain Panels,Roofs,Walls	50		0.167
+18982	Vapor Retarder	Generic	Polyethylene film membrane	Walls	1500		0.167
+18986	Gypsum Wall Board	Generic	Gypsum Wall Board	Ceilings,Columns,Curtain Panels,Walls	1100		0.65
+24146	Structure, Wood Joist/Rafter Layer	Wood	Wood framing, thermal airspace	Runs,Stairs	1.2		0.025
+24202	Concrete, Lightweight	Concrete	Lightweight concrete	Roofs,Wall Sweeps	1762.0309	27.5805	0.209
+24244	Roofing, EPDM Membrane	Generic	EPDM roof membrane	Roofs	930		0.138
+35335	Laminate, Ivory, Matte	Plastic	Plastic Laminate - Ivory, Matte	Furniture,Plumbing Fixtures,Specialty Equipment	1380		0.209
+35341	Steel, Chrome Plated	Metal	Chromiuim plated steel	Furniture,Lighting Fixtures,Plumbing Fixtures,Specialty Equipment	7849.0469		45
+36879	Parking Stripe	Paint		Parking,Top Rails			
+78544	Poche	System		Cameras			
+128891	Steel ASTM A992	Metal	Structural steel 50ksi	Structural Columns	7851.8148		45
+135528	Default Light Source	Generic		Lighting Fixtures			
+336821	Clad - White	Wood		Generic Models,Windows			
+336822	Wood - Stained	Wood		Generic Models,Windows			
+385171	Wood - Birch	Wood		Doors,Furniture	512		0.18
+385173	Metal - Paint Finish - Grey	Paint		Doors			
+435538	Pine	Wood	Pinus Echinata	Furniture	570.2573		0.12
+435571	CMU, Split Face	Masonry	Split face concrete masonry units	Walls	2407.3117	24.1329	1.3
+449947	Cabinets	Miscellaneous		Casework,Slab Edges,Specialty Equipment			
+449951	Cabinets - Handles	Metal		Casework,Specialty Equipment			
+450621	Counter Top	Wood		Casework			
+450622	Steel, Polished	Metal	Polished steel	Lighting Fixtures,Plumbing Fixtures,Specialty Equipment	7850		45
+453617	Metal - Painted - Grey	Paint		Doors			
+453620	Metal - Aluminium	Metal		Doors			
+453621	Metal Door - Brindle	Paint		Doors			
+465404	Glass - White, High Luminance	Glass		Lighting Fixtures			
+465406	Metal - Paint Finish - Ivory, Glossy	Paint		Lighting Fixtures			
+466339	Steel, Paint Finish, Dark Gray, Matte	Metal	Steel, paint finish, dark gray, matte	Site	7849.0469		45
+466340	Glass, White, High Luminance	Glass	physical material	Lighting Fixtures	2420		1.1
+468384	Porcelain, Ivory	Ceramic	Porcelain, ivory	Plumbing Fixtures	3400		2.092
+469172	Porcelain, Linen	Ceramic	Porcelain, linen	Plumbing Fixtures	3400		2.092
+470591	Appliance - Stainless Steel	Metal	Stainless Steel 18/8	Specialty Equipment	8080		16.2
+470604	Appliance - Gasket	Miscellaneous		Specialty Equipment			
+470611	Appliance - Steel - Black	Unassigned		Specialty Equipment			
+472710	Metal - Steel	Unassigned		Vertical Circulation			
+473949	Metal - Aluminum, Brushed	Unassigned		Specialty Equipment			
+593863	Birch	Wood	Betula Alleghaniensis	Furniture,Windows	512		0.18
+613942	Steel, Paint Finish, Dark Gray	Metal	Steel, paint finish, dark gray, glossy	Curtain Panels,Curtain Wall Mullions,Floors,Handrails,Landings,Lighting Fixtures,Runs,Slab Edges,Stairs,Supports,Top Rails	7849.0469		45
+720110	Elevator Annunciator Escutcheon	Metal		Specialty Equipment			
+720111	Elevator Annunicator Buttons	Miscellaneous		Specialty Equipment			
+720114	Elevator Call Escutcheon	Miscellaneous		Specialty Equipment			
+720115	Elevator Call Buttons	Miscellaneous		Specialty Equipment			
+730340	Plastic - Formed Plastic - White	Unassigned		Specialty Equipment			
+730868	Metal - Stainless	Unassigned		Specialty Equipment			
+731925	Mirror	Unassigned		Specialty Equipment			
+737421	Textile - Bamboo Weave	Fabric		Furniture			
+764704	Appliance - Polycarbonate	Unassigned		Specialty Equipment			
+764706	Appliance - Controls	Unassigned		Specialty Equipment			
+764707	Appliance - Door Trim	Unassigned		Specialty Equipment			
+764709	Appliance - Panel	Unassigned		Specialty Equipment			
+778536	Steel, Paint Finish, Ivory, Glossy	Metal	Steel, paint finish, ivory, glossy	Lighting Fixtures,Specialty Equipment	7849.0469		45
+784137	Metal - Paint Finish - Dark Gray, Matte	Unassigned		Food Service Equipment,Specialty Equipment			
+790065	Paint - White	Paint		Site			
+805649	Cabinet	Unassigned		Casework			
+870414	Porcelain - Ivory	Unassigned		Plumbing Fixtures			
+870415	Metal - Steel, Polished	Unassigned		Plumbing Fixtures			
+930496	Aluminum Clad (Orange)	Wood		Curtain Wall Mullions,Doors,Generic Models,Windows			
+930559	Aluminum Clad (Black)	Wood		Curtain Wall Mullions,Doors,Generic Models,Specialty Equipment,Windows			
+937249	Oriented Strand Board	Wood	OSB, oriented strand board, aspen	Walls	100		0.12
+974574	Solar 72 Cell (Square)	Generic		Curtain Panels			
+978846	Solar Infill (No Cells)	Generic	Solar Panels	Curtain Panels			
+1104850	Asphalt, Pavement, Light Grey	Generic	Asphalt or tarmac paving	Floors	2300		1.2
+1106366	Matte Black	Unassigned		Food Service Equipment			
+1106368	Metal - Powder Coated - White	Unassigned		Food Service Equipment			
+1106369	Plastic - Brown	Unassigned		Food Service Equipment			
+1106370	Aluminum Satin Bronze	Unassigned		Food Service Equipment,Generic Models			
+1106371	Rubber - Black	Unassigned		Food Service Equipment			
+1106372	Stainless Steel, Polished	Unassigned		Food Service Equipment,Plumbing Fixtures			
+1106373	Stainless Steel, Brushed	Metal	Stainless Steel 18/8, brushed finish	Food Service Equipment,Plumbing Fixtures	8000		16.2
+1106374	Wood	Wood	Generic wood	Specialty Equipment	570.2573		0.12
+1106375	Plastic - White	System		Specialty Equipment			
+1106378	Plastic - Black - Matte	Plastic		Food Service Equipment			
+1106380	Plastic-Blue	Plastic	Polybutylene terephthalate	Plumbing Fixtures	1310		
+1106381	Plastic-Red	Plastic	Polybutylene terephthalate	Plumbing Fixtures	1310		
+1106382	Plastic - Generic - Gray	Plastic		Specialty Equipment			
+1106385	Plastic - Generic - Charcoal	Plastic		Food Service Equipment,Specialty Equipment			
+1106386	Steel	Metal	Structural	Plumbing Fixtures,Structural Columns	7849.0469		45
+1220087	Stone Tiles	Generic	Porcelain Tiles	Floors	2000		0.8
+1231151	Tree Grate	Generic		Site			
+1233741	Grass	Generic	Grass	Floors			
+1237324	Tree Canopy	Generic		Planting			
+1237325	Tree Trunk	Generic		Planting			
+1242014	Red Plastic	Unassigned		Furniture			
+1288602	Linen, White	Textile	Linen, white	Furniture	152		
+1295335	Shaft Liner	Generic	Gypsum Wall Board	Walls	1100		0.65
+1337227	Steel, Paint Finish, Ivory, Matte	Metal	Steel, paint finish, ivory, matte	Doors	7849.0469		45
+1343483	Living Wall	Generic		Walls			
+1383170	Soil	Generic	Soil	Hardscape,Site	1300		0.837
+1383173	Pea Stone - Brown	Concrete	Precast concrete, light grey, wall height	Site	2407.3117	34.4756	1.046
+1397158	Planting Bed	Generic	Planting Bed	Floors			
+1402087	Sculpture Bed	Generic	Sculpture Bed	Floors			
+1406787	Concrete, Precast Smooth, Light Grey	Concrete	Precast concrete, light grey	Floors,Site	2407.3117	34.4756	1.046
+1419906	Glass, Frosted	Glass	physical material	Lighting Fixtures	2420		1.1
+1420526	Steel, Paint Finish, Black	Metal	Steel, paint finish, red, glossy	Lighting Fixtures,Specialty Equipment	7850		45
+1420527	Steel, Paint Finish, White	Metal	Steel, paint finish, red, glossy	Lighting Fixtures	7850		45
+1464536	Aluminum - Anodized Rough (Black)	Metal	Anodized aluminum, silver	Hardscape	2700		230
+1464537	Aluminum - Anodized Rough (Grey)	Metal	Anodized aluminum, silver	Hardscape	2710		230
+1483290	Gypsum Sheathing	Generic	Gypsum Wall Board	Walls	1100		0.65
+1483426	Metal Panels 50"x60" - Brown	Metal	Metal panels	Curtain Panels,Walls	8080		16.2
+1483428	Metal Panels 50"x60" - Light Grey	Metal	Metal panels	Ceilings	8080		16.2
+1483430	Metal Panels 50"x60" - White	Metal	Metal panels	Columns,Walls	8080		16.2
+1483994	Acrylic, Clear	Plastic	Acrylic sheet glazing	Generic Models	1190		0.251
+1500923	Iron, Wrought	Metal	Wrought Iron, mild steel	Walls	7849.0469		76.2
+1557292	Terrazzo	Generic	Terrazzo flooring	Floors,Landings,Runs,Slab Edges,Stairs	2407.3117	24.1329	1.046
+1557297	Bronze, Architectural	Metal	Architectural bronze	Lighting Fixtures,Stairs,Supports	8470		96.3
+1660388	metal - sheet metal	Unassigned		Specialty Equipment			
+1660456	Brick, Dark Blend, Soldier	Masonry	Common Brick, Soldier, Dark Blend	Floors	1550		0.54
+1924355	Roofing.Membrane.TPO	Thermal and Moisture Protection	TPO ROOFING MEMBRANE	Roofs	1500		0.167
+1924356	Sheathing Roof Board	Sheathing	5/8" DENSDECK ROOF COVER BOARD	Roofs	1100		0.65
+1924357	Weatherproofing.Vapor Barrier.6 Mil	Thermal and Moisture Protection	6 MIL POLYETHELENE VAPOR BARRIER	Roofs	1500		0.167
+1924358	Rigid insulation, Tapered	Generic	Rigid foam insulation board	Roofs	50		0.035
+1964624	Metal Parapet - White	Metal	Metal panels	Wall Sweeps,Walls	8080		16.2
+1996715	FE_Brick - Running - Brown 2 1/2" x 8"	Masonry	Common Brick, Running, Light Blend	Walls	1950		0.54
+1999690	FE_Brick - Running - Grey 2" x 8"	Masonry	Common Brick, Running, Light Blend	Walls	1950		0.54
+2045804	Steel Rusted	Metal	Steel, mill finish	Walls	7850		56
+2073722	Paint - White Glossy	Paint		Doors,Wall Sweeps			
+2076458	Paint - Grey Textured	Paint		Wall Sweeps,Walls			
+2077092	Concrete, Polished	Concrete	Precast concrete, light grey	Floors	2407.3117	34.4756	1.046
+2077616	Oak Flooring, Espresso	Wood	Oak Flooring, Espresso	Floors	673		0.18
+2108591	Leather	Unassigned		Furniture			
+2108592	Metal - Chrome	Unassigned		Furniture			
+2109186	Laminate - Ivory,Matte	Unassigned		Furniture			
+2114498	Ceramic - Wood Pattern	Wood	Oak Flooring, Espresso	Floors	673		0.18
+2130336	Wood - Teak	Wood		Site			
+2250032	Metal - Aluminum	Unassigned		Specialty Equipment			
+2282191	Grass - Turf	Generic	Artificial Turf	Floors			
+2282240	Paving - Brick Border	Masonry	Up-Cycled Brick	Floors	1950		0.54
+2282259	Exterior Decking	Wood	Pressure Treated Wood Decking	Floors	673		0.18
+2456791	Umbrella	Generic		Furniture			
+2456793	Supports	Generic		Furniture			

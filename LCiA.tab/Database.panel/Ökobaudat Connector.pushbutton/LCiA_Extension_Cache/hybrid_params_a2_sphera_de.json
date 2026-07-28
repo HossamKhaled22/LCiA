@@ -1,0 +1,60 @@
+{
+  "_schema": "hybrid_params_v1",
+  "datastock": "a2_sphera_de",
+  "params": {
+    "pool": "symmetric",
+    "k": 10,
+    "w_bm25": 2.0,
+    "w_sem": 1.0
+  },
+  "loqo_mrr": 0.36335217105032586,
+  "loqo_mrr_ci": [
+    0.2700778151261347,
+    0.46975716983325155
+  ],
+  "baseline": {
+    "pool": "asymmetric",
+    "k": 60,
+    "w_bm25": 1.0,
+    "w_sem": 1.0
+  },
+  "baseline_full_mrr": 0.30050358217597667,
+  "best_full_mrr": 0.36335217105032586,
+  "modal_count": 55,
+  "n_folds": 55,
+  "grid": {
+    "pools": [
+      "asymmetric",
+      "symmetric"
+    ],
+    "k": [
+      10,
+      30,
+      60,
+      100
+    ],
+    "weights": [
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ],
+      [
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.5
+      ],
+      [
+        0.5,
+        1.0
+      ]
+    ]
+  },
+  "note": "Consumed by window.py:_compute_rrf_scores + Validation tool once wired (step T5). Query is name-only; orthogonal to the query-enrichment ablation."
+}

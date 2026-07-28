@@ -1,0 +1,1165 @@
+<!-- SPDX-FileCopyrightText: 2026 Hossamelden Elmalah -->
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ökobaudat Connector"
+        Width="1500"
+        Height="780"
+        MinWidth="1280"
+        MinHeight="650"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanResize"
+        ShowInTaskbar="True">
+
+  <Window.Resources>
+    <!-- Accent color palette -->
+    <SolidColorBrush x:Key="AccentBrush" Color="#0078D4" />
+    <SolidColorBrush x:Key="AccentLightBrush" Color="#E8F2FC" />
+    <SolidColorBrush x:Key="HeaderBg" Color="#F5F6F7" />
+    <SolidColorBrush x:Key="BorderBrush" Color="#D1D5DB" />
+    <SolidColorBrush x:Key="SectionBg" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="SubtleFg" Color="#6B7280" />
+
+    <!-- Rounded button style -->
+    <Style x:Key="RoundedButton" TargetType="Button">
+      <Setter Property="Background" Value="{StaticResource AccentBrush}" />
+      <Setter Property="Foreground" Value="White" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="FontSize" Value="12" />
+      <Setter Property="Padding" Value="14,6" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="Cursor" Value="Hand" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="Button">
+            <Border x:Name="bd"
+                    Background="{TemplateBinding Background}"
+                    CornerRadius="4"
+                    Padding="{TemplateBinding Padding}">
+              <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+            <ControlTemplate.Triggers>
+              <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="bd" Property="Opacity" Value="0.88" />
+              </Trigger>
+              <Trigger Property="IsEnabled" Value="False">
+                <Setter TargetName="bd" Property="Opacity" Value="0.45" />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <!-- Subtle (outline) button style -->
+    <Style x:Key="SubtleButton" TargetType="Button">
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="Foreground" Value="{StaticResource AccentBrush}" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="FontSize" Value="12" />
+      <Setter Property="Padding" Value="12,6" />
+      <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="Cursor" Value="Hand" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="Button">
+            <Border x:Name="bd"
+                    Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="4"
+                    Padding="{TemplateBinding Padding}">
+              <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+            <ControlTemplate.Triggers>
+              <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="bd" Property="Background" Value="{StaticResource AccentLightBrush}" />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <!-- RadioButton styled as segmented control -->
+    <Style x:Key="SegmentRadio" TargetType="RadioButton">
+      <Setter Property="FontSize" Value="11.5" />
+      <Setter Property="Margin" Value="0" />
+      <Setter Property="Padding" Value="12,7" />
+      <Setter Property="Cursor" Value="Hand" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="RadioButton">
+            <Border x:Name="bd"
+                    Background="Transparent"
+                    BorderBrush="{StaticResource BorderBrush}"
+                    BorderThickness="1,1,0,1"
+                    Padding="{TemplateBinding Padding}">
+              <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+            <ControlTemplate.Triggers>
+              <Trigger Property="IsChecked" Value="True">
+                <Setter TargetName="bd" Property="Background" Value="{StaticResource AccentBrush}" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="FontWeight" Value="SemiBold" />
+              </Trigger>
+              <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="bd" Property="Background" Value="{StaticResource AccentLightBrush}" />
+              </Trigger>
+              <!-- override mouseover when checked -->
+              <MultiTrigger>
+                <MultiTrigger.Conditions>
+                  <Condition Property="IsChecked" Value="True" />
+                  <Condition Property="IsMouseOver" Value="True" />
+                </MultiTrigger.Conditions>
+                <Setter TargetName="bd" Property="Background" Value="{StaticResource AccentBrush}" />
+                <Setter TargetName="bd" Property="Opacity" Value="0.88" />
+              </MultiTrigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <!-- Modern pill toggle switch (shared look with the Validation tool). -->
+    <Style x:Key="ToggleSwitch" TargetType="ToggleButton">
+      <Setter Property="Cursor" Value="Hand" />
+      <Setter Property="FontSize" Value="11.5" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="Foreground" Value="{StaticResource SubtleFg}" />
+      <Setter Property="Background" Value="#CBD5E1" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="ToggleButton">
+            <StackPanel Orientation="Horizontal" Background="Transparent">
+              <ContentPresenter VerticalAlignment="Center" Margin="0,0,8,0" />
+              <Border x:Name="track" Width="40" Height="22" CornerRadius="11"
+                      Background="{TemplateBinding Background}" VerticalAlignment="Center">
+                <Border x:Name="knob" Width="16" Height="16" CornerRadius="8"
+                        Background="White" HorizontalAlignment="Left"
+                        VerticalAlignment="Center" Margin="3,0,0,0"
+                        RenderTransformOrigin="0.5,0.5">
+                  <Border.RenderTransform>
+                    <TranslateTransform x:Name="knobShift" X="0" />
+                  </Border.RenderTransform>
+                  <Border.Effect>
+                    <DropShadowEffect Color="#000000" Opacity="0.25"
+                                      BlurRadius="3" ShadowDepth="0.5" Direction="270" />
+                  </Border.Effect>
+                </Border>
+              </Border>
+            </StackPanel>
+            <ControlTemplate.Triggers>
+              <Trigger Property="IsChecked" Value="True">
+                <Setter TargetName="track" Property="Background"
+                        Value="{StaticResource AccentBrush}" />
+                <Setter Property="Foreground" Value="{StaticResource AccentBrush}" />
+                <Trigger.EnterActions>
+                  <BeginStoryboard>
+                    <Storyboard>
+                      <DoubleAnimation Storyboard.TargetName="knobShift"
+                                       Storyboard.TargetProperty="X"
+                                       To="18" Duration="0:0:0.16" />
+                    </Storyboard>
+                  </BeginStoryboard>
+                </Trigger.EnterActions>
+                <Trigger.ExitActions>
+                  <BeginStoryboard>
+                    <Storyboard>
+                      <DoubleAnimation Storyboard.TargetName="knobShift"
+                                       Storyboard.TargetProperty="X"
+                                       To="0" Duration="0:0:0.16" />
+                    </Storyboard>
+                  </BeginStoryboard>
+                </Trigger.ExitActions>
+              </Trigger>
+              <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="track" Property="Opacity" Value="0.88" />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <!-- Chip-style toggle for the BIM Context field bar: grey/neutral when
+         inactive, accent-blue when active. Uniform across every field (no
+         per-field colour coding). -->
+    <Style x:Key="ChipToggle" TargetType="ToggleButton">
+      <Setter Property="FontSize" Value="11" />
+      <Setter Property="Margin" Value="0,0,5,2" />
+      <Setter Property="Padding" Value="11,3" />
+      <Setter Property="Cursor" Value="Hand" />
+      <Setter Property="Foreground" Value="#5B6470" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="ToggleButton">
+            <Border x:Name="chip"
+                    Background="#ECEEF1"
+                    BorderBrush="#D3D8DE"
+                    BorderThickness="1"
+                    CornerRadius="10"
+                    Padding="{TemplateBinding Padding}">
+              <ContentPresenter HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                TextBlock.Foreground="{TemplateBinding Foreground}" />
+            </Border>
+            <ControlTemplate.Triggers>
+              <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="chip" Property="BorderBrush"
+                        Value="{StaticResource AccentBrush}" />
+              </Trigger>
+              <Trigger Property="IsChecked" Value="True">
+                <Setter TargetName="chip" Property="Background"
+                        Value="{StaticResource AccentBrush}" />
+                <Setter TargetName="chip" Property="BorderBrush"
+                        Value="{StaticResource AccentBrush}" />
+                <Setter Property="Foreground" Value="White" />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+  </Window.Resources>
+
+  <!-- ═══ MAIN LAYOUT ═══ -->
+  <Grid Margin="0">
+    <Grid.RowDefinitions>
+      <!-- Header bar -->
+      <RowDefinition Height="Auto" />
+      <!-- Content area -->
+      <RowDefinition Height="*" />
+      <!-- Action button -->
+      <RowDefinition Height="Auto" />
+      <!-- Footer -->
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <!-- ── HEADER ── -->
+    <Border Grid.Row="0" Background="{StaticResource HeaderBg}"
+            BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,0,1"
+            Padding="16,10">
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Data Source  -->
+        <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
+          <TextBlock Text="Data Source:" FontWeight="SemiBold" FontSize="12" VerticalAlignment="Center" Margin="0,0,10,0" />
+          <Border CornerRadius="4" BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,1,0">
+            <StackPanel Orientation="Horizontal">
+              <RadioButton x:Name="radio_a2_sphera" GroupName="DataSource"
+                           Content="A2 – Sphera MLC" IsChecked="True"
+                           Style="{StaticResource SegmentRadio}"
+                           Checked="radio_datasource_changed" />
+              <RadioButton x:Name="radio_a1_sphera" GroupName="DataSource"
+                           Content="A1 – Sphera MLC"
+                           Style="{StaticResource SegmentRadio}"
+                           Checked="radio_datasource_changed" />
+              <RadioButton x:Name="radio_a2_ecoinvent" GroupName="DataSource"
+                           Content="A2 – ecoinvent"
+                           Style="{StaticResource SegmentRadio}"
+                           Checked="radio_datasource_changed" />
+              <RadioButton x:Name="radio_project_epds" GroupName="DataSource"
+                           Content="Project EPDs"
+                           Style="{StaticResource SegmentRadio}"
+                           Checked="radio_datasource_changed" />
+            </StackPanel>
+          </Border>
+        </StackPanel>
+
+        <!-- Language toggle + CSV controls -->
+        <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+          <!-- Language toggle -->
+          <TextBlock Text="Lang:" FontWeight="SemiBold" FontSize="11"
+                     VerticalAlignment="Center" Margin="0,0,6,0"
+                     Foreground="{StaticResource SubtleFg}" />
+          <Border CornerRadius="4" BorderBrush="{StaticResource BorderBrush}"
+                  BorderThickness="0,0,1,0" Margin="0,0,14,0">
+            <StackPanel Orientation="Horizontal">
+              <RadioButton x:Name="radio_lang_de" GroupName="Language"
+                           Content="DE" IsChecked="True"
+                           Style="{StaticResource SegmentRadio}"
+                           Checked="radio_language_changed" />
+              <RadioButton x:Name="radio_lang_en" GroupName="Language"
+                           Content="EN"
+                           Style="{StaticResource SegmentRadio}"
+                           Checked="radio_language_changed" />
+            </StackPanel>
+          </Border>
+        </StackPanel>
+      </Grid>
+    </Border>
+
+    <!-- ── CONTENT ── -->
+    <Grid Grid.Row="1" Margin="14,10,14,6">
+      <Grid.RowDefinitions>
+        <!-- Search bar -->
+        <RowDefinition Height="Auto" />
+        <!-- BIM Context bar (always visible) -->
+        <RowDefinition Height="Auto" />
+        <!-- Advanced filters (collapsed by default) -->
+        <RowDefinition Height="Auto" />
+        <!-- Lists + Details -->
+        <RowDefinition Height="*" MinHeight="200" />
+      </Grid.RowDefinitions>
+
+      <!-- SEARCH BAR -->
+      <StackPanel Grid.Row="0" Orientation="Vertical" Margin="0,0,0,10">
+      <DockPanel>
+        <Button x:Name="btn_searchmode_materials"
+                Width="40" Height="28" Margin="0,0,6,0"
+                Content="AZ"
+                FontSize="13" FontWeight="Bold"
+                Padding="0"
+                ToolTip="AZ = fuzzy search with typo tolerance / .* = regex search (click to cycle)"
+                Style="{StaticResource SubtleButton}"
+                DockPanel.Dock="Left"
+                Click="toggle_search_mode_materials" />
+        <!-- Hybrid retrieval (Reciprocal Rank Fusion). Visible only when
+             semantic mode is active; toggled by toggle_search_mode_materials. -->
+        <CheckBox x:Name="chk_hybrid_rrf"
+                  Height="28" Margin="0,0,6,0"
+                  Padding="4,0,2,0"
+                  VerticalContentAlignment="Center"
+                  FontSize="11"
+                  Visibility="Collapsed"
+                  ToolTip="Hybrid retrieval: fuse BM25F (lexical) and bge-m3 (semantic) rankings via Reciprocal Rank Fusion (k=60, Cormack 2009). Combines literal-word matches with meaning-based matches; hover a Score cell for the breakdown."
+                  Content="Hybrid"
+                  DockPanel.Dock="Left"
+                  Checked="hybrid_rrf_changed"
+                  Unchecked="hybrid_rrf_changed" />
+        <!-- Cross-encoder reranker (Phase 1+). Re-scores the top-K
+             candidates from the active first-pass ranker (cosine or RRF)
+             using a local sentence-transformers cross-encoder.
+             Visible only when semantic mode is active AND the
+             rerank service is reachable; auto-enabled by
+             _update_reranker_checkbox_visibility. -->
+        <CheckBox x:Name="chk_reranker"
+                  Height="28" Margin="0,0,6,0"
+                  Padding="4,0,2,0"
+                  VerticalContentAlignment="Center"
+                  FontSize="11"
+                  Visibility="Collapsed"
+                  ToolTip="Cross-encoder reranking: re-score the top-K candidates with BAAI/bge-reranker-v2-m3 (local Python sidecar). Sharper top-10 ordering than cosine alone; ~1-3s extra per query on CPU."
+                  Content="Rerank"
+                  DockPanel.Dock="Left"
+                  Checked="reranker_changed"
+                  Unchecked="reranker_changed" />
+        <Button x:Name="btn_advanced_filters"
+                Height="28" Margin="0,0,6,0"
+                Content="&#x25BC; Filters"
+                FontSize="11"
+                Padding="8,0"
+                ToolTip="Show/hide advanced indicator and material filters"
+                Style="{StaticResource SubtleButton}"
+                DockPanel.Dock="Left"
+                Click="toggle_advanced_filters" />
+        <ComboBox x:Name="combo_sort"
+                  Width="95" Height="28" Margin="0,0,6,0"
+                  DockPanel.Dock="Right"
+                  FontSize="11"
+                  VerticalContentAlignment="Center"
+                  SelectionChanged="combo_sort_changed"
+                  SelectedIndex="0">
+          <ComboBoxItem Content="Sort: Default" />
+          <ComboBoxItem Content="Sort: A → Z" />
+          <ComboBoxItem Content="Sort: Z → A" />
+        </ComboBox>
+        <TextBox x:Name="textbox_search"
+                 Height="28" Margin="0,0,6,0"
+                 VerticalContentAlignment="Center"
+                 FontSize="12"
+                 TextChanged="textbox_search_changed"
+                 PreviewKeyDown="textbox_search_keydown" />
+      </DockPanel>
+      </StackPanel>
+
+      <!-- SLASH-COMMAND REGEX POPUP (outside DockPanel so it doesn't affect layout) -->
+      <Popup x:Name="popup_regex_templates"
+             Grid.Row="0"
+             PlacementTarget="{Binding ElementName=textbox_search}"
+             Placement="Bottom"
+             IsOpen="False"
+             StaysOpen="False"
+             AllowsTransparency="True">
+        <Border Background="{StaticResource SectionBg}"
+                BorderBrush="{StaticResource BorderBrush}"
+                BorderThickness="1"
+                CornerRadius="4"
+                MinWidth="340"
+                MaxHeight="420">
+          <StackPanel>
+            <TextBlock Text="Regex Templates"
+                       FontSize="10" FontWeight="SemiBold"
+                       Foreground="{StaticResource SubtleFg}"
+                       Margin="10,6,10,4" />
+            <ListBox x:Name="listbox_regex_templates"
+                     BorderThickness="0"
+                     Background="Transparent"
+                     FontSize="12"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                     KeyDown="listbox_regex_templates_keydown"
+                     MouseDoubleClick="listbox_regex_templates_click">
+              <ListBox.ItemTemplate>
+                <DataTemplate>
+                  <StackPanel Margin="6,4">
+                    <TextBlock Text="{Binding Label}" FontWeight="SemiBold" FontSize="12" />
+                    <TextBlock Text="{Binding Description}" FontSize="10"
+                               Foreground="{StaticResource SubtleFg}" />
+                    <TextBlock Text="{Binding Template}" FontSize="10"
+                               FontFamily="Consolas"
+                               Foreground="{StaticResource AccentBrush}" />
+                  </StackPanel>
+                </DataTemplate>
+              </ListBox.ItemTemplate>
+            </ListBox>
+          </StackPanel>
+        </Border>
+      </Popup>
+
+      <!-- BIM CONTEXT BAR (always visible) - build an enriched search query
+           from a project material's BIM metadata. Toggle the field chips to
+           fold pieces in/out of the query live, in whatever mode is active. -->
+      <Border Grid.Row="1" Margin="0,0,0,8" Padding="10,7"
+              Background="{StaticResource AccentLightBrush}"
+              BorderBrush="#BBD6F2" BorderThickness="1" CornerRadius="4">
+        <DockPanel LastChildFill="True">
+          <ToggleButton x:Name="tgl_bim_context" Content="BIM Context"
+                        DockPanel.Dock="Left"
+                        Style="{StaticResource ToggleSwitch}"
+                        VerticalAlignment="Center" Margin="0,0,12,0"
+                        ToolTip="Build an enriched search query from a project material's BIM metadata (materials in the active view)."
+                        Checked="bim_context_toggled"
+                        Unchecked="bim_context_toggled" />
+          <Button x:Name="btn_pick_context_material"
+                  Content="Pick project material…"
+                  DockPanel.Dock="Left"
+                  Height="26" Padding="12,0" IsEnabled="False"
+                  VerticalAlignment="Center" Margin="0,0,12,0"
+                  Style="{StaticResource SubtleButton}"
+                  ToolTip="Pick a material from the active view. Toggle the field chips to fold its BIM metadata into the search query."
+                  Click="pick_context_material_click" />
+          <TextBlock x:Name="lbl_bim_context_hint"
+                     DockPanel.Dock="Right"
+                     VerticalAlignment="Center" Margin="12,0,0,0"
+                     FontSize="11" Foreground="{StaticResource SubtleFg}"
+                     Text="Toggle fields to refine the query." />
+          <!-- Chips fill the remaining width and wrap to a new row when the
+               window is narrowed (the DockPanel bounds the WrapPanel's width,
+               which a horizontal StackPanel would not). -->
+          <WrapPanel x:Name="panel_context_fields"
+                     VerticalAlignment="Center"
+                     Visibility="Collapsed" />
+        </DockPanel>
+      </Border>
+
+      <!-- ADVANCED FILTERS PANEL (collapsed by default) -->
+      <Border x:Name="border_advanced_filters" Grid.Row="2"
+              Visibility="Collapsed"
+              Background="#FAFBFC" BorderBrush="{StaticResource BorderBrush}"
+              BorderThickness="1" CornerRadius="4" Margin="0,0,0,8" Padding="12,10">
+        <StackPanel>
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <!-- Two columns. The indicator section (column 0) needs
+                   only enough width for its sliders and combo boxes;
+                   the Materials Classification (column 1) gets the rest
+                   so the chip box's right edge aligns with the Clear
+                   button below. The Clear button lives in a separate
+                   bottom-bar Grid so it sits at a fixed distance from
+                   the panel's bottom edge regardless of how many chip
+                   rows expand the right column. -->
+              <ColumnDefinition Width="2*" />
+              <ColumnDefinition Width="3*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Section 1: Indicator Sliders -->
+            <StackPanel Grid.Column="0" Margin="0,0,12,0">
+              <TextBlock Text="Environmental Indicator" FontWeight="SemiBold"
+                         FontSize="11" Foreground="#374151" Margin="0,0,0,4" />
+              <ComboBox x:Name="combo_env_indicator" Height="24" FontSize="11"
+                        Margin="0,0,0,4" SelectedIndex="0"
+                        SelectionChanged="combo_env_indicator_changed" />
+              <Border BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,1,0"
+                      Margin="0,0,0,3" HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal">
+                  <RadioButton x:Name="radio_env_sum"  Content="Sum" IsChecked="True"
+                               GroupName="env_phase" Style="{StaticResource SegmentRadio}"
+                               FontSize="9" Padding="6,2" Checked="env_phase_changed"/>
+                  <RadioButton x:Name="radio_env_a1a3" Content="A1-A3"
+                               GroupName="env_phase" Style="{StaticResource SegmentRadio}"
+                               FontSize="9" Padding="6,2" Checked="env_phase_changed"/>
+                  <RadioButton x:Name="radio_env_a1a5" Content="A1-A5"
+                               GroupName="env_phase" Style="{StaticResource SegmentRadio}"
+                               FontSize="9" Padding="6,2" Checked="env_phase_changed"/>
+                  <RadioButton x:Name="radio_env_b1b7" Content="B1-B7"
+                               GroupName="env_phase" Style="{StaticResource SegmentRadio}"
+                               FontSize="9" Padding="6,2" Checked="env_phase_changed"/>
+                  <RadioButton x:Name="radio_env_c1c4" Content="C1-C4"
+                               GroupName="env_phase" Style="{StaticResource SegmentRadio}"
+                               FontSize="9" Padding="6,2" Checked="env_phase_changed"/>
+                  <RadioButton x:Name="radio_env_d"    Content="D"
+                               GroupName="env_phase" Style="{StaticResource SegmentRadio}"
+                               FontSize="9" Padding="6,2" Checked="env_phase_changed"/>
+                </StackPanel>
+              </Border>
+              <Grid Margin="0,4,0,2">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Best" FontSize="10"
+                           Foreground="#374151" VerticalAlignment="Center"
+                           Margin="0,0,6,0" />
+                <Slider x:Name="slider_env_pct" Grid.Column="1"
+                        Minimum="1" Maximum="100" Value="100"
+                        IsSnapToTickEnabled="True" TickFrequency="1"
+                        VerticalAlignment="Center"
+                        ValueChanged="env_slider_changed"
+                        ToolTip="Drag to filter to the best X% by indicator value (100% = no filter)" />
+                <TextBox x:Name="text_env_pct" Grid.Column="2"
+                         Width="40" Height="22" FontSize="10"
+                         Margin="6,0,2,0"
+                         VerticalContentAlignment="Center"
+                         HorizontalContentAlignment="Center"
+                         Text="100"
+                         PreviewKeyDown="env_pct_keydown"
+                         LostFocus="env_pct_lostfocus"
+                         ToolTip="Type a percentage (1-100) and press Enter" />
+                <TextBlock Grid.Column="3" Text="%" FontSize="10"
+                           VerticalAlignment="Center" />
+              </Grid>
+              <TextBlock x:Name="text_env_tier_label" FontSize="9" Foreground="#888"
+                         Margin="0,2,0,4" TextWrapping="Wrap" />
+
+              <TextBlock Text="Resource Indicator" FontWeight="SemiBold"
+                         FontSize="11" Foreground="#374151" Margin="0,8,0,4" />
+              <ComboBox x:Name="combo_res_indicator" Height="24" FontSize="11"
+                        Margin="0,0,0,4" SelectedIndex="0"
+                        SelectionChanged="combo_res_indicator_changed" />
+              <Border BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,1,0"
+                      Margin="0,0,0,3" HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal">
+                  <RadioButton x:Name="radio_res_sum"  Content="Sum" IsChecked="True"
+                               GroupName="res_phase" Style="{StaticResource SegmentRadio}"
+                               FontSize="9" Padding="6,2" Checked="res_phase_changed"/>
+                  <RadioButton x:Name="radio_res_a1a3" Content="A1-A3"
+                               GroupName="res_phase" Style="{StaticResource SegmentRadio}"
+                               FontSize="9" Padding="6,2" Checked="res_phase_changed"/>
+                  <RadioButton x:Name="radio_res_a1a5" Content="A1-A5"
+                               GroupName="res_phase" Style="{StaticResource SegmentRadio}"
+                               FontSize="9" Padding="6,2" Checked="res_phase_changed"/>
+                  <RadioButton x:Name="radio_res_b1b7" Content="B1-B7"
+                               GroupName="res_phase" Style="{StaticResource SegmentRadio}"
+                               FontSize="9" Padding="6,2" Checked="res_phase_changed"/>
+                  <RadioButton x:Name="radio_res_c1c4" Content="C1-C4"
+                               GroupName="res_phase" Style="{StaticResource SegmentRadio}"
+                               FontSize="9" Padding="6,2" Checked="res_phase_changed"/>
+                  <RadioButton x:Name="radio_res_d"    Content="D"
+                               GroupName="res_phase" Style="{StaticResource SegmentRadio}"
+                               FontSize="9" Padding="6,2" Checked="res_phase_changed"/>
+                </StackPanel>
+              </Border>
+              <Grid Margin="0,4,0,2">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Best" FontSize="10"
+                           Foreground="#374151" VerticalAlignment="Center"
+                           Margin="0,0,6,0" />
+                <Slider x:Name="slider_res_pct" Grid.Column="1"
+                        Minimum="1" Maximum="100" Value="100"
+                        IsSnapToTickEnabled="True" TickFrequency="1"
+                        VerticalAlignment="Center"
+                        ValueChanged="res_slider_changed"
+                        ToolTip="Drag to filter to the best X% by indicator value (100% = no filter)" />
+                <TextBox x:Name="text_res_pct" Grid.Column="2"
+                         Width="40" Height="22" FontSize="10"
+                         Margin="6,0,2,0"
+                         VerticalContentAlignment="Center"
+                         HorizontalContentAlignment="Center"
+                         Text="100"
+                         PreviewKeyDown="res_pct_keydown"
+                         LostFocus="res_pct_lostfocus"
+                         ToolTip="Type a percentage (1-100) and press Enter" />
+                <TextBlock Grid.Column="3" Text="%" FontSize="10"
+                           VerticalAlignment="Center" />
+              </Grid>
+              <TextBlock x:Name="text_res_tier_label" FontSize="9" Foreground="#888"
+                         Margin="0,2,0,4" TextWrapping="Wrap" />
+              <!-- Lifecycle Module Completeness (combined phases) -->
+              <TextBlock Text="Lifecycle Modules Required" FontSize="10" Foreground="#6B7280"
+                         Margin="0,10,0,3" />
+              <WrapPanel Margin="0,0,0,2">
+                <CheckBox x:Name="chk_req_a1a5" Content="A1-A5" FontSize="10"
+                          IsChecked="False" Margin="0,0,10,2"
+                          Checked="filter_auto_query" Unchecked="filter_auto_query" />
+                <CheckBox x:Name="chk_req_b1b7" Content="B1-B7" FontSize="10"
+                          IsChecked="False" Margin="0,0,10,2"
+                          Checked="filter_auto_query" Unchecked="filter_auto_query" />
+                <CheckBox x:Name="chk_req_c1c4" Content="C1-C4" FontSize="10"
+                          IsChecked="False" Margin="0,0,10,2"
+                          Checked="filter_auto_query" Unchecked="filter_auto_query" />
+                <CheckBox x:Name="chk_req_d" Content="D" FontSize="10"
+                          IsChecked="False" Margin="0,0,6,2"
+                          Checked="filter_auto_query" Unchecked="filter_auto_query" />
+              </WrapPanel>
+              <!-- Minimum match score (BM25F confidence). Only effective
+                   while a search query is entered; 0% = no filter. -->
+              <TextBlock Text="Min Score" FontSize="10" Foreground="#6B7280"
+                         Margin="0,10,0,3" />
+              <Grid Margin="0,0,0,2">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="&#8805;" FontSize="10"
+                           Foreground="#374151" VerticalAlignment="Center"
+                           Margin="0,0,6,0" />
+                <Slider x:Name="slider_min_score" Grid.Column="1"
+                        Minimum="0" Maximum="100" Value="50"
+                        IsSnapToTickEnabled="True" TickFrequency="1"
+                        VerticalAlignment="Center"
+                        ValueChanged="min_score_slider_changed"
+                        ToolTip="Hide datasets below this match confidence. Only active while a search query is entered (0% = no filter)." />
+                <TextBox x:Name="text_min_score" Grid.Column="2"
+                         Width="40" Height="22" FontSize="10"
+                         Margin="6,0,2,0"
+                         VerticalContentAlignment="Center"
+                         HorizontalContentAlignment="Center"
+                         Text="50"
+                         PreviewKeyDown="min_score_pct_keydown"
+                         LostFocus="min_score_pct_lostfocus"
+                         ToolTip="Type a percentage (0-100) and press Enter" />
+                <TextBlock Grid.Column="3" Text="%" FontSize="10"
+                           VerticalAlignment="Center" />
+              </Grid>
+            </StackPanel>
+
+            <!-- Section 2: Materials Classification (only filter in this column).
+                 Sub-window has a FIXED height matching column 0's bottom
+                 (the Lifecycle Modules Required row), so the white box is
+                 always the same visible size. When chip groups exceed the
+                 available height, the inner ScrollViewer shows a vertical
+                 scrollbar inside the box rather than expanding it. -->
+            <StackPanel Grid.Column="1" Margin="0,0,0,0">
+              <TextBlock Text="Materials Classification" FontWeight="SemiBold"
+                         FontSize="11" Foreground="#374151" Margin="0,0,0,4" />
+              <Border BorderBrush="{StaticResource BorderBrush}" BorderThickness="1"
+                      CornerRadius="3" Background="#FFFFFF"
+                      Padding="6,4">
+                <ScrollViewer Height="285"
+                              VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Disabled">
+                  <StackPanel>
+                    <WrapPanel x:Name="panel_classification_roots" Margin="0,0,0,4">
+                      <ToggleButton x:Name="tgl_cls_mineral" Content="Mineral Construction" FontSize="10"
+                                    Padding="6,2" Margin="0,0,4,2" Click="classification_root_changed" />
+                      <ToggleButton x:Name="tgl_cls_wood" Content="Wood" FontSize="10"
+                                    Padding="6,2" Margin="0,0,4,2" Click="classification_root_changed" />
+                      <ToggleButton x:Name="tgl_cls_metals" Content="Metals" FontSize="10"
+                                    Padding="6,2" Margin="0,0,4,2" Click="classification_root_changed" />
+                      <ToggleButton x:Name="tgl_cls_plastics" Content="Plastics" FontSize="10"
+                                    Padding="6,2" Margin="0,0,4,2" Click="classification_root_changed" />
+                      <ToggleButton x:Name="tgl_cls_insulation" Content="Insulation" FontSize="10"
+                                    Padding="6,2" Margin="0,0,4,2" Click="classification_root_changed" />
+                      <ToggleButton x:Name="tgl_cls_coatings" Content="Coatings" FontSize="10"
+                                    Padding="6,2" Margin="0,0,4,2" Click="classification_root_changed" />
+                      <ToggleButton x:Name="tgl_cls_windows" Content="Windows &amp; Façades" FontSize="10"
+                                    Padding="6,2" Margin="0,0,4,2" Click="classification_root_changed" />
+                      <ToggleButton x:Name="tgl_cls_bldg_svcs" Content="Building Services" FontSize="10"
+                                    Padding="6,2" Margin="0,0,4,2" Click="classification_root_changed" />
+                      <ToggleButton x:Name="tgl_cls_composites" Content="Composites" FontSize="10"
+                                    Padding="6,2" Margin="0,0,4,2" Click="classification_root_changed" />
+                      <ToggleButton x:Name="tgl_cls_other" Content="Other" FontSize="10"
+                                    Padding="6,2" Margin="0,0,4,2" Click="classification_root_changed" />
+                      <ToggleButton x:Name="tgl_cls_eol" Content="End of Life" FontSize="10"
+                                    Padding="6,2" Margin="0,0,4,2" Click="classification_root_changed" />
+                    </WrapPanel>
+                    <!-- Single panel hosting the entire L2/L3/L4 chip
+                         hierarchy. Filled by _rebuild_classification_tree()
+                         with chips INTERLEAVED by parent path: L2 of
+                         each selected L1 is followed immediately by L3
+                         groups for that L1's selected L2 chips, then L4
+                         groups for those L3s' children. Indentation
+                         (12 / 24 / 36 px) is applied per-element by the
+                         _make_classification_group_header / _chip_row
+                         helpers so each level is visually shifted. Chip
+                         Tag length identifies the level (2 / 3 / 4
+                         segments separated by '||'). -->
+                    <StackPanel x:Name="panel_classification_tree" Margin="0,0,0,4">
+                    </StackPanel>
+                  </StackPanel>
+                </ScrollViewer>
+              </Border>
+
+            </StackPanel>
+
+          </Grid>
+
+          <!-- Bottom bar: active filter summary on the left, Clear button
+               on the right, both on the same line so there's no empty
+               strip beneath the Clear button. The active-filter text
+               flexes to fill remaining horizontal space; Clear stays a
+               fixed width on the right. -->
+          <Grid Margin="0,8,0,0">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="text_active_filters" Grid.Column="0"
+                       Text="" FontSize="9" Foreground="#6B7280" FontStyle="Italic"
+                       VerticalAlignment="Center" TextWrapping="Wrap"
+                       Margin="0,0,8,0"
+                       Visibility="Collapsed" />
+            <Button Grid.Column="1" x:Name="btn_clear_filters" Content="Clear"
+                    Style="{StaticResource SubtleButton}"
+                    Width="120" Height="32"
+                    Click="btn_clear_filters_click" />
+          </Grid>
+        </StackPanel>
+      </Border>
+
+      <!-- SPLIT: Dataset Grid  |  Details -->
+      <Grid Grid.Row="3">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="3*" MinWidth="800" />
+          <ColumnDefinition Width="6" />
+          <ColumnDefinition Width="2*" MinWidth="250" />
+        </Grid.ColumnDefinitions>
+
+        <!-- LEFT: Dataset DataGrid -->
+        <Border Grid.Column="0" BorderBrush="{StaticResource BorderBrush}"
+                BorderThickness="1" CornerRadius="4" Background="{StaticResource SectionBg}">
+          <Grid>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto" />
+              <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <DockPanel Grid.Row="0" Margin="10,8,10,6">
+              <TextBlock Text="Available Datasets"
+                         FontWeight="SemiBold" FontSize="12"
+                         VerticalAlignment="Center" />
+              <TextBlock x:Name="text_status"
+                         Text="" Foreground="{StaticResource SubtleFg}"
+                         FontSize="11" HorizontalAlignment="Right"
+                         VerticalAlignment="Center" />
+            </DockPanel>
+
+            <DataGrid x:Name="datagrid_datasets" Grid.Row="1"
+                      AutoGenerateColumns="False"
+                      CanUserAddRows="False"
+                      CanUserDeleteRows="False"
+                      CanUserSortColumns="True"
+                      CanUserResizeColumns="False"
+                      SelectionMode="Single"
+                      GridLinesVisibility="Horizontal"
+                      HeadersVisibility="Column"
+                      IsReadOnly="True"
+                      SelectionChanged="datagrid_datasets_selection_changed"
+                      PreviewMouseLeftButtonDown="datagrid_datasets_mouse_down"
+                      PreviewMouseMove="datagrid_datasets_mouse_move"
+                      ScrollViewer.VerticalScrollBarVisibility="Auto"
+                      ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                      VirtualizingPanel.ScrollUnit="Pixel"
+                      BorderThickness="0"
+                      Background="White"
+                      AlternatingRowBackground="#F9FAFB"
+                      RowBackground="White"
+                      ColumnHeaderHeight="55"
+                      FontSize="11">
+
+              <!-- Header style -->
+              <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                  <Setter Property="Background" Value="#F0F4F8" />
+                  <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+                  <Setter Property="BorderThickness" Value="0,0,1,1" />
+                  <Setter Property="Padding" Value="4,4,4,3" />
+                  <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                  <Setter Property="VerticalContentAlignment" Value="Stretch" />
+                </Style>
+              </DataGrid.ColumnHeaderStyle>
+
+              <DataGrid.Columns>
+                <!-- Score% (mode-agnostic calibrated confidence; BM25F for
+                     regex/fuzzy, cosine for semantic - see per-cell tooltip). -->
+                <DataGridTemplateColumn Width="60" SortMemberPath="MatchScore" CanUserSort="True">
+                  <DataGridTemplateColumn.HeaderTemplate>
+                    <DataTemplate>
+                      <StackPanel ToolTip="Calibrated match confidence for the active search mode. Hover a cell for the formula, inputs and per-term (or per-dimension) breakdown.">
+                        <TextBlock Text="Score" FontWeight="SemiBold" FontSize="10.5" Margin="0,0,0,3" />
+                      </StackPanel>
+                    </DataTemplate>
+                  </DataGridTemplateColumn.HeaderTemplate>
+                  <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                      <TextBlock Text="{Binding MatchScorePct}" Margin="4,3"
+                                 ToolTip="{Binding MatchScoreTooltip}" />
+                    </DataTemplate>
+                  </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <!-- Name -->
+                <DataGridTemplateColumn Width="2*" MinWidth="100" SortMemberPath="DisplayName" CanUserSort="True">
+                  <DataGridTemplateColumn.HeaderTemplate>
+                    <DataTemplate>
+                      <StackPanel>
+                        <TextBlock Text="Name" FontWeight="SemiBold" FontSize="10.5" Margin="0,0,0,3" />
+                        <TextBox Tag="name" Height="22" FontSize="10"
+                                 Background="White"
+                                 TextChanged="filter_text_changed"
+                                 Loaded="filter_control_loaded" />
+                      </StackPanel>
+                    </DataTemplate>
+                  </DataGridTemplateColumn.HeaderTemplate>
+                  <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                      <TextBlock Text="{Binding DisplayName}" TextWrapping="Wrap" Margin="4,3" />
+                    </DataTemplate>
+                  </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <!-- Classification -->
+                <DataGridTemplateColumn Width="2*" MinWidth="100" SortMemberPath="Classification" CanUserSort="True">
+                  <DataGridTemplateColumn.HeaderTemplate>
+                    <DataTemplate>
+                      <StackPanel>
+                        <TextBlock Text="Classification" FontWeight="SemiBold" FontSize="10.5" Margin="0,0,0,3" />
+                        <ComboBox Tag="classification" Height="22" FontSize="9"
+                                  SelectionChanged="filter_combo_changed"
+                                  Loaded="filter_control_loaded">
+                          <ComboBoxItem Content="All" IsSelected="True" />
+                        </ComboBox>
+                      </StackPanel>
+                    </DataTemplate>
+                  </DataGridTemplateColumn.HeaderTemplate>
+                  <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                      <TextBlock Text="{Binding ClassificationDisplay}" TextWrapping="Wrap" Margin="4,3" />
+                    </DataTemplate>
+                  </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <!-- Location -->
+                <DataGridTemplateColumn Width="55" SortMemberPath="Location" CanUserSort="True">
+                  <DataGridTemplateColumn.HeaderTemplate>
+                    <DataTemplate>
+                      <StackPanel>
+                        <TextBlock Text="Location" FontWeight="SemiBold" FontSize="10.5" Margin="0,0,0,3" />
+                        <ComboBox Tag="location" Height="22" FontSize="9"
+                                  SelectionChanged="filter_combo_changed"
+                                  Loaded="filter_control_loaded">
+                          <ComboBoxItem Content="All" IsSelected="True" />
+                        </ComboBox>
+                      </StackPanel>
+                    </DataTemplate>
+                  </DataGridTemplateColumn.HeaderTemplate>
+                  <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                      <TextBlock Text="{Binding Location}" Margin="4,3" />
+                    </DataTemplate>
+                  </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <!-- Valid Until -->
+                <DataGridTemplateColumn Width="70" SortMemberPath="ValidUntil" CanUserSort="True">
+                  <DataGridTemplateColumn.HeaderTemplate>
+                    <DataTemplate>
+                      <StackPanel>
+                        <TextBlock Text="Valid Until" FontWeight="SemiBold" FontSize="10.5" Margin="0,0,0,3" />
+                        <ComboBox Tag="valid_until" Height="22" FontSize="9"
+                                  SelectionChanged="filter_combo_changed"
+                                  Loaded="filter_control_loaded">
+                          <ComboBoxItem Content="All" IsSelected="True" />
+                        </ComboBox>
+                      </StackPanel>
+                    </DataTemplate>
+                  </DataGridTemplateColumn.HeaderTemplate>
+                  <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                      <TextBlock Text="{Binding ValidUntil}" Margin="4,3" />
+                    </DataTemplate>
+                  </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <!-- Type -->
+                <DataGridTemplateColumn Width="1*" MinWidth="60" SortMemberPath="DatasetType" CanUserSort="True">
+                  <DataGridTemplateColumn.HeaderTemplate>
+                    <DataTemplate>
+                      <StackPanel>
+                        <TextBlock Text="Type" FontWeight="SemiBold" FontSize="10.5" Margin="0,0,0,3" />
+                        <ComboBox Tag="type" Height="22" FontSize="9"
+                                  SelectionChanged="filter_combo_changed"
+                                  Loaded="filter_control_loaded">
+                          <ComboBoxItem Content="All" IsSelected="True" />
+                        </ComboBox>
+                      </StackPanel>
+                    </DataTemplate>
+                  </DataGridTemplateColumn.HeaderTemplate>
+                  <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                      <TextBlock Text="{Binding DatasetType}" TextWrapping="Wrap" Margin="4,3" />
+                    </DataTemplate>
+                  </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Width="1.5*" MinWidth="80" SortMemberPath="Owner" CanUserSort="True">
+                  <DataGridTemplateColumn.HeaderTemplate>
+                    <DataTemplate>
+                      <StackPanel>
+                        <TextBlock Text="Owner" FontWeight="SemiBold" FontSize="10.5" Margin="0,0,0,3" />
+                        <ComboBox Tag="owner" Height="22" FontSize="9"
+                                  SelectionChanged="filter_combo_changed"
+                                  Loaded="filter_control_loaded">
+                          <ComboBoxItem Content="All" IsSelected="True" />
+                        </ComboBox>
+                      </StackPanel>
+                    </DataTemplate>
+                  </DataGridTemplateColumn.HeaderTemplate>
+                  <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                      <TextBlock Text="{Binding Owner}" TextWrapping="Wrap" Margin="4,3" />
+                    </DataTemplate>
+                  </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <!-- EPD No (Project EPDs only) -->
+                <DataGridTemplateColumn x:Name="col_epd_no" Width="1.5*" MinWidth="80" SortMemberPath="EpdNo" CanUserSort="True" Visibility="Collapsed">
+                  <DataGridTemplateColumn.HeaderTemplate>
+                    <DataTemplate>
+                      <StackPanel>
+                        <TextBlock Text="EPD No." FontWeight="SemiBold" FontSize="10.5" Margin="0,0,0,3" />
+                        <TextBox Tag="epd_no" Height="22" FontSize="10"
+                                 Background="White"
+                                 TextChanged="filter_text_changed"
+                                 Loaded="filter_control_loaded" />
+                      </StackPanel>
+                    </DataTemplate>
+                  </DataGridTemplateColumn.HeaderTemplate>
+                  <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                      <TextBlock Text="{Binding EpdNo}" TextWrapping="Wrap" Margin="4,3" />
+                    </DataTemplate>
+                  </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <!-- Compliance -->
+                <DataGridTemplateColumn x:Name="col_compliance" Width="1.5*" MinWidth="80" SortMemberPath="Compliance" CanUserSort="True">
+                  <DataGridTemplateColumn.HeaderTemplate>
+                    <DataTemplate>
+                      <StackPanel>
+                        <TextBlock Text="Compliance" FontWeight="SemiBold" FontSize="10.5" Margin="0,0,0,3" />
+                        <ComboBox Tag="compliance" Height="22" FontSize="9"
+                                  SelectionChanged="filter_combo_changed"
+                                  Loaded="filter_control_loaded">
+                          <ComboBoxItem Content="All" IsSelected="True" />
+                        </ComboBox>
+                      </StackPanel>
+                    </DataTemplate>
+                  </DataGridTemplateColumn.HeaderTemplate>
+                  <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                      <TextBlock Text="{Binding Compliance}" TextWrapping="Wrap" Margin="4,3" />
+                    </DataTemplate>
+                  </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <!-- Program Operator -->
+                <DataGridTemplateColumn Width="1.5*" MinWidth="80" SortMemberPath="ProgramOperator" CanUserSort="True">
+                  <DataGridTemplateColumn.HeaderTemplate>
+                    <DataTemplate>
+                      <StackPanel>
+                        <TextBlock Text="Program Operator" FontWeight="SemiBold" FontSize="10.5" Margin="0,0,0,3" />
+                        <ComboBox Tag="program_operator" Height="22" FontSize="9"
+                                  SelectionChanged="filter_combo_changed"
+                                  Loaded="filter_control_loaded">
+                          <ComboBoxItem Content="All" IsSelected="True" />
+                        </ComboBox>
+                      </StackPanel>
+                    </DataTemplate>
+                  </DataGridTemplateColumn.HeaderTemplate>
+                  <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                      <TextBlock Text="{Binding ProgramOperator}" TextWrapping="Wrap" Margin="4,3" />
+                    </DataTemplate>
+                  </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+              </DataGrid.Columns>
+            </DataGrid>
+          </Grid>
+        </Border>
+
+        <!-- Gap (Splitter removed to lock widths) -->
+        <Border Grid.Column="1" Width="6" Background="Transparent" />
+
+        <!-- RIGHT: Details – transposed indicator rows, module columns -->
+        <Border Grid.Column="2" BorderBrush="{StaticResource BorderBrush}"
+                BorderThickness="1" CornerRadius="4" Background="{StaticResource SectionBg}">
+          <Grid>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto" />
+              <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Text="Dataset Details"
+                       FontWeight="SemiBold" FontSize="12"
+                       Margin="10,8,10,6" />
+
+            <ScrollViewer x:Name="indicator_scroll_viewer"
+                          Grid.Row="1"
+                          VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="Disabled">
+              <StackPanel>
+
+                <!-- Technology Description section -->
+                <Border Background="#EBF3FB" Padding="8,5,8,5" Margin="0,0,0,0">
+                  <CheckBox x:Name="chk_tech_description"
+                            Content="Technology Description (incl. Background System)"
+                            IsChecked="True"
+                            FontWeight="SemiBold" FontSize="11"
+                            Foreground="{StaticResource AccentBrush}"
+                            Checked="chk_tech_description_changed"
+                            Unchecked="chk_tech_description_changed" />
+                </Border>
+                <Border x:Name="border_tech_description_content"
+                        Background="White" Padding="10,8,10,10">
+                  <TextBlock x:Name="lbl_tech_description"
+                             Text="Select a dataset to view its technology description."
+                             FontSize="10.5"
+                             Foreground="#1F2937"
+                             TextWrapping="Wrap" />
+                </Border>
+
+                <!-- Environmental Impact section -->
+                <Border Background="#EBF3FB" Padding="8,5,8,5" Margin="0,10,0,0">
+                  <CheckBox x:Name="chk_env"
+                            Content="Environmental Impact Indicators"
+                            IsChecked="True"
+                            FontWeight="SemiBold" FontSize="11"
+                            Foreground="{StaticResource AccentBrush}"
+                            Checked="chk_env_changed"
+                            Unchecked="chk_env_changed" />
+                </Border>
+
+                <DataGrid x:Name="datagrid_env"
+                          AutoGenerateColumns="False"
+                          CanUserAddRows="False"
+                          CanUserDeleteRows="False"
+                          CanUserResizeColumns="False"
+                          SelectionMode="Single"
+                          GridLinesVisibility="All"
+                          HeadersVisibility="Column"
+                          IsReadOnly="True"
+                          EnableRowVirtualization="False"
+                          ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                          ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                          PreviewMouseWheel="indicator_grid_preview_mouse_wheel"
+                          BorderThickness="0"
+                          AlternatingRowBackground="#F9FAFB"
+                          RowBackground="White"
+                          ColumnHeaderHeight="28"
+                          FontSize="10.5"
+                          SelectionChanged="datagrid_env_selection_changed"
+                          PreviewMouseLeftButtonDown="indicator_grid_mouse_down"
+                          PreviewMouseMove="indicator_grid_mouse_move">
+                  <!-- Columns built dynamically -->
+                </DataGrid>
+
+                <!-- Resource Use / Life Cycle section -->
+                <Border Background="#EBF3FB" Padding="8,5,8,5" Margin="0,10,0,0">
+                  <CheckBox x:Name="chk_resource"
+                            Content="Resource Use / Life Cycle Indicators"
+                            IsChecked="True"
+                            FontWeight="SemiBold" FontSize="11"
+                            Foreground="{StaticResource AccentBrush}"
+                            Checked="chk_resource_changed"
+                            Unchecked="chk_resource_changed" />
+                </Border>
+
+                <DataGrid x:Name="datagrid_resource"
+                          AutoGenerateColumns="False"
+                          CanUserAddRows="False"
+                          CanUserDeleteRows="False"
+                          CanUserResizeColumns="False"
+                          SelectionMode="Single"
+                          GridLinesVisibility="All"
+                          HeadersVisibility="Column"
+                          IsReadOnly="True"
+                          EnableRowVirtualization="False"
+                          ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                          ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                          PreviewMouseWheel="indicator_grid_preview_mouse_wheel"
+                          BorderThickness="0"
+                          AlternatingRowBackground="#F9FAFB"
+                          RowBackground="White"
+                          ColumnHeaderHeight="28"
+                          FontSize="10.5"
+                          SelectionChanged="datagrid_resource_selection_changed"
+                          PreviewMouseLeftButtonDown="indicator_grid_mouse_down"
+                          PreviewMouseMove="indicator_grid_mouse_move">
+                  <!-- Columns built dynamically -->
+                </DataGrid>
+
+
+              </StackPanel>
+            </ScrollViewer>
+          </Grid>
+        </Border>
+      </Grid>
+
+    </Grid>
+
+    <!-- ── ACTION BUTTON (always visible, outside content grid) ── -->
+    <Button Grid.Row="2"
+            x:Name="btn_create_material"
+            Content="⬇  Map to Revit Material(s)"
+            Height="38"
+            FontSize="13"
+            Margin="14,6,14,6"
+            HorizontalAlignment="Stretch"
+            Style="{StaticResource RoundedButton}"
+            Click="button_create_material" />
+
+    <!-- ── FOOTER ── -->
+    <Border Grid.Row="3" Background="{StaticResource HeaderBg}"
+            BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,1,0,0"
+            Padding="16,6">
+      <Grid>
+        <TextBlock x:Name="footer_version"
+                   Text="Version: 2.0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Foreground="{StaticResource SubtleFg}" FontSize="11" />
+        <TextBlock x:Name="footer_source"
+                   Text="Source: ÖKOBAUDAT"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Foreground="{StaticResource SubtleFg}" FontSize="11" />
+        <TextBlock HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
+                   Foreground="{StaticResource SubtleFg}" FontSize="11">
+          <Hyperlink x:Name="link_oekobaudat"
+                     NavigateUri="https://www.oekobaudat.de"
+                     RequestNavigate="hyperlink_navigate">
+            oekobaudat.de
+          </Hyperlink>
+        </TextBlock>
+      </Grid>
+    </Border>
+  </Grid>
+</Window>

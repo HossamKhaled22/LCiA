@@ -1,0 +1,63 @@
+# ── Python bytecode ───────────────────────────────────────────────
+__pycache__/
+*.pyc
+
+# ── Logs, lock files, transient sidecar state ─────────────────────
+*.log
+*.lock
+**/.reranker_service.lock
+**/.embedding_lock_*
+
+# ── Regenerable runtime caches (rebuilt by the Connector) ─────────
+# Committed exceptions: the fitted calibration curves (calibration_*,
+# confidence_*), the tuned fusion parameters (hybrid_params_*,
+# query_context_v1.json), and the frozen 28 June 2026 corpus snapshot
+# of the benchmark stock (A2 Sphera EN/DE dataset lists, indicator
+# tables, embeddings) - the corpus every thesis result is scored on.
+**/LCiA_Extension_Cache/ds_cache_v2_*.json
+!**/LCiA_Extension_Cache/ds_cache_v2_a2_sphera_en.json
+!**/LCiA_Extension_Cache/ds_cache_v2_a2_sphera_de.json
+**/LCiA_Extension_Cache/indicators_*.json
+!**/LCiA_Extension_Cache/indicators_a2_sphera_en.json
+!**/LCiA_Extension_Cache/indicators_a2_sphera_de.json
+**/LCiA_Extension_Cache/embeddings_*.bin
+!**/LCiA_Extension_Cache/embeddings_a2_sphera_en.bin
+!**/LCiA_Extension_Cache/embeddings_a2_sphera_de.bin
+**/LCiA_Extension_Cache/lancedb/
+**/LCiA_Extension_Cache/query_context_values_*.json
+**/LCiA_Extension_Cache/_benchmark_settings.json
+
+# ── Local run state (recreated at runtime) ────────────────────────
+**/Validation.pushbutton/_settings.json
+**/ExtractContext.pushbutton/data/materials_context.json
+
+# ── Regenerable benchmark / analysis outputs ──────────────────────
+**/phase0_benchmark.json
+**/phase0_benchmark.md
+**/phase1_benchmark*.json
+**/phase1_benchmark*.md
+**/tools/per_query_scores.csv
+**/tools/ablation_query_context_*
+**/tools/ladder_modes_results.json
+**/tools/ladder_modes_fuzzy_results.json
+**/tools/ladder_modes.md
+**/tools/tune_fusion_results*.md
+**/tools/sweep_reranker_top_k_results.md
+**/tools/score_distribution_report.md
+**/tools/tune_bm25_results.md
+**/tools/gt_build/cache_index.tsv
+**/tools/gt_build/candidates/
+**/tools/gt_build/results/
+**/tools/gt_build/proposals/
+
+# ── Validation report exports ─────────────────────────────────────
+# Future exports are ignored; only the two frozen 5 July 2026 runs
+# behind the thesis result tables are committed.
+**/validation_report_*.html
+**/validation_report_*.png
+!**/validation_report_20260705_171044_EN.html
+!**/validation_report_20260705_180118_DE.html
+
+# ── Editor / IDE ──────────────────────────────────────────────────
+.vscode/
+.idea/
